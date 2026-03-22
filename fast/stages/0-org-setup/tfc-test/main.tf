@@ -27,20 +27,4 @@ data "google_project" "test" {
 output "verification_status" {
   value = "SUCCESS: TFC is successfully authenticated as ${data.google_project.test.number}!"
 }
-# This module will create a VPC and a subnet
-module "test-vpc" {
-  source     = "github.com/kathaitsunil/fabric-google//modules/net-vpc?ref=main"
-  project_id = "sun21-prod-iac-core-0"
-  name       = "sun21-test-vpc"
-  subnets = [
-    {
-      name          = "test-subnet"
-      region        = "us-central1"
-      ip_cidr_range = "10.0.0.0/24"
-    }
-  ]
-}
 
-output "vpc_self_link" {
-  value = module.test-vpc.self_link
-}
