@@ -38,7 +38,7 @@ module "test-vpc" {
     {
       name          = "test-subnet"
       region        = "us-central1"
-      ip_cidr_range = "10.0.0.0/24"
+      ip_cidr_range = "10.0.1.0/24"
     }
   ]
 }
