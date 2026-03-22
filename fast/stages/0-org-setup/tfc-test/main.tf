@@ -33,7 +33,7 @@ output "verification_status" {
 module "test-vpc" {
   source     = "github.com/kathaitsunil/fabric-google//modules/net-vpc?ref=main"
   project_id = "sun21-prod-iac-core-0"
-  name       = "sun21-test-vpc"
+  name       = "sun21-test-vpc1"
   subnets = [
     {
       name          = "test-subnet"
