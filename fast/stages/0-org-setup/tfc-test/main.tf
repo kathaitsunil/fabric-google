@@ -29,21 +29,4 @@ output "verification_status" {
 }
 
 
-# This module will create a VPC and a subnet
-module "test-vpc" {
-  source     = "github.com/kathaitsunil/fabric-google//modules/net-vpc?ref=main"
-  project_id = "sun21-prod-iac-core-0"
-  name       = "sun21-test-vpc1"
-  subnets = [
-    {
-      name          = "test-subnet"
-      region        = "us-central1"
-      ip_cidr_range = "10.0.1.0/24"
-    }
-  ]
-}
-
-output "vpc_self_link" {
-  value = module.test-vpc.self_link
-}
 
