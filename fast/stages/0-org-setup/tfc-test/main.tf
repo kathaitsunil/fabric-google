@@ -8,7 +8,11 @@ terraform {
   required_providers {
     google = {
       source  = "hashicorp/google"
-      version = "~> 6.0"
+      version = "~> 7.0"
+    }
+    google-beta = {
+      source  = "hashicorp/google-beta"
+      version = "~> 7.0"
     }
   }
 }
@@ -25,7 +29,7 @@ output "verification_status" {
 }
 # This module will create a VPC and a subnet
 module "test-vpc" {
-  source     = "../../../../modules/net-vpc"
+  source     = "github.com/kathaitsunil/fabric-google//modules/net-vpc?ref=main"
   project_id = "sun21-prod-iac-core-0"
   name       = "sun21-test-vpc"
   subnets = [
