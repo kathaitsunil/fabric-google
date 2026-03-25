@@ -27,6 +27,12 @@ terraform {
     storage_custom_endpoint = "https://storage.${universe_domain}/storage/v1/b"
     %{~ endif ~}
   }
+cloud {
+    organization = "sp-trial-org"
+    workspaces {
+      name = "${workspace_name}"
+    }
+  }
 }
 provider "google" {
   impersonate_service_account = "${service_account}"
