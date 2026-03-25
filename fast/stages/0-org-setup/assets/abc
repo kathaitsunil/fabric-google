@@ -1,0 +1,49 @@
+And i see that there is a template file that creates the provider configuration providers.tf.tpl in org setup stage. 
+
+
+1. We can replace the gcs backend there with
+
+terraform {
+  cloud {
+    organization = "sp-trial-org"
+    workspaces {
+      name = "${workspace_name}"
+    }
+  }
+}
+
+
+2. In /output-files.tf I added this mapping
+
+locals {
+
+  # Add this map to define your custom TFC workspace names
+  tfc_workspaces = {
+    "0-org-setup"  = "gcp-glz-org-setup-dev"
+    "1-vpcsc"      = "gcp-glz-vpcsc-dev"
+    "2-networking" = "gcp-glz-network-dev"
+    "2-security"   = "gcp-glz-security-dev"
+  }
+
+
+and later on in the provider templates
+
+workspace_name  = lookup(local.tfc_workspaces, each.key, "gcp-glz-${each.key}-dev")
+Shreya Prabhu, Yesterday 6:49 PM
+This can help all the future stage provider files automatically get configured with the relevant workspace name and TFC backend, instead of them manually editing it each time.
+Leszek Grudzień, Yesterday 6:55 PM
+oh, that's great, thank you!
+Shreya Prabhu, Yesterday 6:55 PM, Edited
+But - this cannot be automated for first org setup stage. That had to be done manually.
+
+Because of dependencies in how these files get generated.
+1 unread, Shreya Prabhu, Yesterday 6:55 PM, Edited
+I dont know if it is really "worth" automating or not , if we have only 3 stages it is not a big deal to overwrite each provider🙂 
+
+But if they want like a source of truth of all workspaces listed in locals, this would help
+Leszek Grudzień, Yesterday 7:01 PM
+Cool, we can maybe ask them tomorrow before we start? I'm currently fighting with gcloud setup on my VDI to be able to run TF plan for my feature branches. I partially found answer for Grygorii's question and it worked in my org but wanted to at least run the plan on their side before I push the changes
+Shreya Prabhu, Yesterday 7:16 PM
+QuotedQuoted Sent by Shreya PrabhuBut - this cannot be automated for first org setup stage. That had to be done manually.
+
+Because of dependencies in how these files get generated.End Quote press L to link back to original quoteEnd Quote press L to link back to original quoteOkay - that might not be true - i got confused by gemini. But anyway, if they want to do this, we will find out tomorrow when they run plan whether it reflects the changes or not 🙂
