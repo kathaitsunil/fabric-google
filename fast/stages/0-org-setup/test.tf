@@ -67,3 +67,29 @@ Benefit: Adopting the new stage into the Terraform Cloud ecosystem takes seconds
 
 Use Case: Stages need to impersonate specific GCP Service Accounts to deploy resources, securely brokered through TFC Workload Identity Federation.
 Benefit: Because output-files.tf also maps and injects the impersonated Google Service Account (${service_account}) into the template alongside the workspace name, it guarantees that TFC workspaces perfectly align with the specific GCP Service Account assigned to that stage. The authentication context and state management context are tightly coupled and generated together.
+
+
+
+Why Migrate to TFC for Automation?
+Migrating state to Terraform Cloud is not just about storage; it is the foundation for professional Infrastructure as Code (IaC) Automation.
+
+1. Remote Execution (Worker Managed for You)
+In a local or GCS-backend setup, automation requires you to manage your own "runners" (e.g., a specific VM or a GitHub Actions runner) and ensure they have the correct Terraform version, plugins, and credentials installed.
+
+TFC Benefit: TFC provides the execution environment. Automation becomes "push-button" because TFC handles the compute, the environment setup, and the cleanup for every run.
+2. VCS-Driven Workflows
+Automation is most powerful when tied to your version control system (GitHub).
+
+TFC Benefit: TFC connects directly to your repository. A "git push" automatically triggers a terraform plan in the TFC UI, and a "merge" triggers a terraform apply. This creates a seamless CI/CD pipeline without writing complex script wrappers.
+3. Secretless Automation via Workload Identity
+Storing static GCP Service Account keys (JSON) in CI/CD secrets (like GitHub Secrets) is a major security risk.
+
+TFC Benefit: With the migration to TFC and the configuration of Workload Identity Federation, automation is secretless. TFC workspaces dynamically exchange a TFC token for a temporary GCP token. There are no long-lived keys to rotate or leak.
+4. API-Driven Orchestration
+For advanced automation (e.g., a Python script or a self-service portal triggering infrastructure), TFC provides a robust REST API.
+
+TFC Benefit: You can automate the creation of workspaces, the setting of variables, and the triggering of runs programmatically, allowing Terraform to be part of a larger automated platform.
+5. Concurrent Run Management & Queuing
+In a busy team, multiple automated jobs might try to run at once.
+
+TFC Benefit: TFC natively handles run queuing. If an automated process is already running an apply, TFC will queue subsequent requests, preventing state lock contention and ensuring the integrity of your infrastructure.
