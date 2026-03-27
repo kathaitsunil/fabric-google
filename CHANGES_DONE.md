@@ -1,6 +1,12 @@
-# Changes Done Report - Workload Identity Integration
+## [2026-03-27] Final Stabilization: Project Naming & Prefix Alignment
 
-This document tracks the changes made to the Cloud Foundation Fabric repository to support TFC Workload Identity impersonation for the `iac-org-cicd-rw` service account.
+### Resolved: Destructive Plan (Project Replacement)
+-   **Issue**: Terraform was triggering a replacement of projects and buckets (22+ resources) because the project IDs and bucket names in the YAML config lacked the `sun21-` prefix found in the live state.
+-   **Fix**:
+    -   Updated `iac-0.yaml`, `billing-0.yaml`, and `log-0.yaml` in `classic/projects/core/`.
+    -   Inlined the `sun21-` prefix into the `name` field (e.g., `name: sun21-prod-iac-core-0`).
+    -   Explicitly set `prefix: ""` at the project level to prevent the factory from adding a second, duplicate prefix.
+-   **Result**: The Terraform plan now shows no changes or only intended additions (CI/CD service accounts). Bucket and project deletion flags have been removed.
 
 ## Summary of Modifications
 
