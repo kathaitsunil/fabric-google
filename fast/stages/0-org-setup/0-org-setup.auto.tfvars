@@ -1,3 +1,3 @@
 factories_config = {
-  dataset = "datasets/classic"
+  dataset = "./datasets/classic"
 }

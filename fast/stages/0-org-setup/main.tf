@@ -75,6 +75,10 @@ locals {
   ]...)
 }
 
+output "debug_paths" {
+  value = local.paths
+}
+
 # TODO: streamine location replacements
 
 resource "terraform_data" "precondition" {
@@ -97,6 +101,10 @@ resource "terraform_data" "precondition" {
         try(local.project_defaults.overrides.prefix, null) != null
       )
       error_message = "Prefix must be set in project defaults or overrides."
+    }
+    precondition {
+      condition     = false
+      error_message = "DEBUG PATHS: ${jsonencode(local.paths)}"
     }
   }
 }
