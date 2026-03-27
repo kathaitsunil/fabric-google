@@ -30,4 +30,4 @@ org-setup:
     pool: $workload_identity_pools:iac-0/tfc-pool
     provider: $workload_identity_providers:iac-0/tfc-pool/tfc-provider
     iam_principalsets:
-      template: terraform
+      template: terraform_wildcard

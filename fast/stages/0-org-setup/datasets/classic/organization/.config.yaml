@@ -65,6 +65,7 @@ iam_by_principals:
     - roles/resourcemanager.tagAdmin
     - roles/resourcemanager.tagUser
   $iam_principals:service_accounts/iac-0/iac-org-cicd-rw: *iac_org_rw_roles
+  "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/*": *iac_org_rw_roles
   $iam_principals:service_accounts/iac-0/iac-org-ro:
     - roles/cloudasset.viewer
     - roles/essentialcontacts.viewer

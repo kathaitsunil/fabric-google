@@ -31,6 +31,10 @@ locals {
       apply = "principalSet://iam.googleapis.com/%s/attribute.terraform_workspace_id/%s"
       plan  = "principalSet://iam.googleapis.com/%s/attribute.terraform_workspace_id/%s"
     }
+    terraform_wildcard = {
+      apply = "principalSet://iam.googleapis.com/%s/*"
+      plan  = "principalSet://iam.googleapis.com/%s/*"
+    }
     # https://developer.okta.com/docs/api/openapi/okta-oauth/guides/overview/
     okta = {
       apply  = "principalSet://iam.googleapis.com/%s/attribute.sub/project_path:%s:ref_type:branch:ref:%s"
