@@ -47,8 +47,7 @@ iam_by_principals:
     - roles/serviceusage.serviceUsageConsumer
 services:
   - accesscontextmanager.googleapis.com
-# uncomment if you want to use Assured Workloads
-#  - assuredworkloads.googleapis.com
+  - assuredworkloads.googleapis.com
   - bigquery.googleapis.com
   - bigqueryreservation.googleapis.com
   - bigquerystorage.googleapis.com
@@ -62,7 +61,7 @@ services:
   - compute.googleapis.com
   - container.googleapis.com
   - datacatalog.googleapis.com
-# - essentialcontacts.googleapis.com removed to bypass 403
+  - essentialcontacts.googleapis.com
   - iam.googleapis.com
   - iamcredentials.googleapis.com
   - logging.googleapis.com
@@ -75,15 +74,14 @@ services:
   - storage-component.googleapis.com
   - storage.googleapis.com
   - sts.googleapis.com
-# org_policies removed temporarily to bypass 403 ADC error
-# org_policies:
-#   iam.workloadIdentityPoolProviders:
-#     rules:
-#       - allow:
-#           values:
-#             - https://token.actions.githubusercontent.com
-#             - https://gitlab.com
-#             - https://app.terraform.io
+org_policies:
+  iam.workloadIdentityPoolProviders:
+    rules:
+      - allow:
+          values:
+            - https://token.actions.githubusercontent.com
+            - https://gitlab.com
+            - https://app.terraform.io
 factories_config: {}
 data_access_logs:
   storage.googleapis.com:
