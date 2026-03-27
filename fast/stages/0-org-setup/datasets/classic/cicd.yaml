@@ -21,12 +21,9 @@ org-setup:
   repository:
     name: ws-wcM2mDyC5mr7fAMQ
     type: github
-
-
-
   service_accounts:
-    apply: $iam_principals:service_accounts/iac-0/iac-org-rw
-    plan: $iam_principals:service_accounts/iac-0/iac-org-ro
+    apply: $iam_principals:service_accounts/iac-0/iac-org-cicd-rw
+    plan: $iam_principals:service_accounts/iac-0/iac-org-cicd-ro
   tfvars_files:
     - 0-org-setup.auto.tfvars
   workload_identity:

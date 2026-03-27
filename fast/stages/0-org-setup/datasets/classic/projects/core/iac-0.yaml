@@ -172,6 +172,9 @@ service_accounts:
       "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/attribute.terraform_workspace_id/ws-wcM2mDyC5mr7fAMQ":
         - roles/iam.workloadIdentityUser
         - roles/iam.serviceAccountTokenCreator
+      "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/attribute.terraform_full_workspace/terraform-cloud-deployment-GCP/fabric-google":
+        - roles/iam.workloadIdentityUser
+        - roles/iam.serviceAccountTokenCreator
   # CI/CD service accounts for this stage
   iac-org-cicd-ro:
     display_name: IaC service account for org setup CI/CD (read-only).
@@ -183,6 +186,9 @@ service_accounts:
     display_name: IaC service account for org setup CI/CD (read-write).
     iam_by_principals:
       "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/attribute.terraform_workspace_id/ws-wcM2mDyC5mr7fAMQ":
+        - roles/iam.workloadIdentityUser
+        - roles/iam.serviceAccountTokenCreator
+      "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/attribute.terraform_full_workspace/terraform-cloud-deployment-GCP/fabric-google":
         - roles/iam.workloadIdentityUser
         - roles/iam.serviceAccountTokenCreator
     iam_sa_roles:
