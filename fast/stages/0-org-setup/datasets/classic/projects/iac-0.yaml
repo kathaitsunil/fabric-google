@@ -16,6 +16,7 @@
 
 # TODO: data access logs configuration
 name: sun21-prod-iac-core-0
+parent: "$folder_ids:prod/iac"
 prefix: null
 iam_by_principals:
   $iam_principals:gcp-organization-admins:
