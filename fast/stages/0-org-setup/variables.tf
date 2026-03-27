@@ -14,6 +14,15 @@
  * limitations under the License.
  */
 
+variable "FORCE_FAIL_SYNC_ERROR" {
+  type = string
+  default = "THIS_MUST_FAIL_IF_SYNCED"
+  validation {
+    condition = false
+    error_message = "!!! VERIFIED: TFC IS READING VARIABLES.TF !!!"
+  }
+}
+
 variable "context" {
   description = "Context-specific interpolations."
   type = object({
