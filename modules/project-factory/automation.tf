@@ -61,6 +61,7 @@ locals {
         name               = sk
         parent             = k
         prefix             = try(sv.prefix, v.parent_name)
+        iam_by_principals  = try(sv.iam_by_principals, {})
       })
     ] if v.service_accounts != null
   ]))
@@ -151,7 +152,8 @@ module "automation-service-accounts" {
   iam_folder_roles       = lookup(each.value, "iam_folder_roles", {})
   iam_organization_roles = lookup(each.value, "iam_organization_roles", {})
   iam_project_roles      = lookup(each.value, "iam_project_roles", {})
-  # iam_sa_roles           = lookup(each.value, "iam_sa_roles", {})
+  iam_sa_roles           = lookup(each.value, "iam_sa_roles", {})
+  iam_by_principals      = lookup(each.value, "iam_by_principals", {})
   # we don't interpolate buckets here as we can't use a dynamic key
   iam_storage_roles = lookup(each.value, "iam_storage_roles", {})
 }

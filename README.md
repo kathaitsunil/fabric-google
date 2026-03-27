@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GoogleCloudPlatform/cloud-foundation-fabric/master/assets/logos/fabric-logo-colors-gray-800.png?v1">
@@ -42,3 +43,7 @@ Currently available modules:
 For more information and usage examples see each module's README file.
 
 <!-- $Id$ -->
+=======
+# fabric-google
+Fabric testing
+>>>>>>> d1223c25604af15cc6575d95ff359a75901d5cd7
