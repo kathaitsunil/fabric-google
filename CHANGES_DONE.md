@@ -23,7 +23,11 @@ This document tracks the changes made to the Cloud Foundation Fabric repository 
 *   **Action:** Added `iam_by_principals`, `description`, `iam_organization_roles`, and `iam_billing_roles` to the service account schema.
 *   **Purpose:** To resolve validation errors in `check_yaml_schema.py` and provide better IDE support (autocompletion and linting) for service account definitions.
 
-### 4. Git Synchronization
+### 4. Bug Fix: Safe Attribute Access
+*   **Action:** Switched from direct attribute access (`each.value.iam_by_principals`) to `lookup(each.value, "iam_by_principals", {})`.
+*   **Purpose:** To prevent the Terraform plan from failing in projects that do not have `iam_by_principals` defined in their YAML configuration. This was the cause of the recent "Errored" state in TFC.
+
+### 5. Git Synchronization
 *   **Action:** Performed `git add`, `git commit`, `git pull --rebase`, and `git push origin main`.
 *   **Purpose:** To resolve a push conflict with the remote repository and ensure all local changes are synchronized and live on GitHub for TFC to process.
 
