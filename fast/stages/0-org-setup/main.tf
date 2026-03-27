@@ -50,11 +50,16 @@ locals {
     storage_bucket = try(local._defaults.output_files.storage_bucket, null)
     providers      = try(local._defaults.output_files.providers, {})
   }
+  _dataset = (
+    startswith(var.factories_config.dataset, "/") || startswith(var.factories_config.dataset, ".")
+    ? var.factories_config.dataset
+    : "${path.module}/${var.factories_config.dataset}"
+  )
   paths = {
     for k, v in var.factories_config.paths : k => try(pathexpand(
       startswith(v, "/") || startswith(v, ".")
       ? v :
-      "${var.factories_config.dataset}/${v}"
+      "${local._dataset}/${v}"
     ), null)
   }
   project_defaults = {

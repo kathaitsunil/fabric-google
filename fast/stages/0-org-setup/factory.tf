@@ -63,7 +63,7 @@ module "factory" {
     )
   })
   factories_config = {
-    basepath = var.factories_config.dataset
+    basepath = local._dataset
     budgets  = local.factory_billing
     paths    = var.factories_config.paths
   }
