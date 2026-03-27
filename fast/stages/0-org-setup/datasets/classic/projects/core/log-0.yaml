@@ -14,7 +14,8 @@
 
 # yaml-language-server: $schema=../../../../schemas/project.schema.json
 
-name: prod-audit-logs-1
+name: sun21-prod-audit-logs-1
+prefix: ""
 iam_by_principals:
   $iam_principals:service_accounts/iac-0/iac-org-ro:
     - roles/viewer
