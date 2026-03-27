@@ -29,7 +29,7 @@ locals {
     # https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens#token-structure
     terraform = {
       apply = "principalSet://iam.googleapis.com/%s/attribute.terraform_workspace_id/%s"
-      plan  = "principalSet://iam.googleapis.com/%s/attribute.terraform_project_id/%s"
+      plan  = "principalSet://iam.googleapis.com/%s/attribute.terraform_workspace_id/%s"
     }
     # https://developer.okta.com/docs/api/openapi/okta-oauth/guides/overview/
     okta = {
