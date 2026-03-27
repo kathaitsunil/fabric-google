@@ -106,6 +106,13 @@ resource "terraform_data" "precondition" {
       condition     = false
       error_message = "DEBUG PATHS: ${jsonencode(local.paths)}"
     }
+resource "null_resource" "debug_ls" {
+  provisioner "local-exec" {
+    command = "ls -R ../.."
   }
+}
+
+output "workspace_root_ls" {
+  value = "Check TFC logs for local-exec output"
 }
 

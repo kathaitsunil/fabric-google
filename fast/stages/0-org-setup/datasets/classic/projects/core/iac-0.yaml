@@ -143,6 +143,7 @@ buckets:
   iac-outputs:
     description: Terraform state for the org-level automation.
     versioning: true
+    force_destroy: true
     iam:
       roles/storage.admin:
         - $iam_principals:service_accounts/iac-0/iac-org-rw

@@ -1,3 +1,3 @@
 factories_config = {
-  dataset = "${path.module}/datasets/classic"
+  dataset = "datasets/classic"
 }
