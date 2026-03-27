@@ -15,7 +15,6 @@
 # yaml-language-server: $schema=../../../../schemas/project.schema.json
 
 name: prod-audit-logs-1
-parent: "$folder_ids:prod/iac"
 iam_by_principals:
   $iam_principals:service_accounts/iac-0/iac-org-ro:
     - roles/viewer
