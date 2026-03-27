@@ -181,6 +181,10 @@ service_accounts:
         - roles/iam.serviceAccountTokenCreator
   iac-org-cicd-rw:
     display_name: IaC service account for org setup CI/CD (read-write).
+    iam_by_principals:
+      "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/attribute.terraform_workspace_id/ws-wcM2mDyC5mr7fAMQ":
+        - roles/iam.workloadIdentityUser
+        - roles/iam.serviceAccountTokenCreator
     iam_sa_roles:
       $service_account_ids:iac-0/iac-org-rw:
         - roles/iam.workloadIdentityUser

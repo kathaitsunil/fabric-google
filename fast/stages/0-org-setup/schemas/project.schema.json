@@ -143,6 +143,9 @@
                 },
                 "iam_storage_roles": {
                   "$ref": "#/$defs/iam_storage_roles"
+                },
+                "iam_by_principals": {
+                  "$ref": "#/$defs/iam_by_principals"
                 }
               }
             }
@@ -690,6 +693,18 @@
             },
             "iam_sa_roles": {
               "$ref": "#/$defs/iam_sa_roles"
+            },
+            "iam_by_principals": {
+              "$ref": "#/$defs/iam_by_principals"
+            },
+            "iam_organization_roles": {
+              "$ref": "#/$defs/iam_organization_roles"
+            },
+            "iam_billing_roles": {
+              "$ref": "#/$defs/iam_billing_roles"
+            },
+            "description": {
+              "type": "string"
             },
             "tag_bindings": {
               "$ref": "#/$defs/tag_bindings"
