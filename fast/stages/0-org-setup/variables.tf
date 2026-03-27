@@ -17,6 +17,7 @@
 variable "billing_account" {
   description = "Billing account ID."
   type        = string
+  default     = "01895E-E57953-1DB141"
 }
 
 variable "context" {
@@ -75,11 +76,17 @@ variable "organization" {
     id          = number
     customer_id = string
   })
+  default = {
+    customer_id = "C03b3mev4"
+    domain      = "kathaitsun.com"
+    id          = 254926364766
+  }
 }
 
 variable "prefix" {
   description = "Prefix used for resources that need unique names. Use 9 characters max."
   type        = string
+  default     = "sun21"
   validation {
     condition     = length(var.prefix) <= 9
     error_message = "Prefix length must be 9 or less."
