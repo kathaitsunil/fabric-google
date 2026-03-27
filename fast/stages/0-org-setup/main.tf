@@ -14,6 +14,19 @@
  * limitations under the License.
  */
 
+# --- CRITICAL DIAGNOSTIC SENTINEL ---
+# If you are reading this, the Plan should FAIL IMMEDIATELY with the message below.
+# If it does NOT fail with this message, TFC is running OLD CODE.
+resource "terraform_data" "FORCE_FAIL_TO_PROVE_SYNC" {
+  lifecycle {
+    precondition {
+      condition     = false
+      error_message = "!!! SUCCESS: TFC IS FINALLY SEEING THE NEW CODE !!!"
+    }
+  }
+}
+# ------------------------------------
+
 locals {
   _ctx = {
     for k, v in var.context : k => merge(
