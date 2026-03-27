@@ -14,19 +14,6 @@
  * limitations under the License.
  */
 
-# --- CRITICAL DIAGNOSTIC SENTINEL ---
-# If you are reading this, the Plan should FAIL IMMEDIATELY with the message below.
-# If it does NOT fail with this message, TFC is running OLD CODE.
-resource "terraform_data" "FORCE_FAIL_TO_PROVE_SYNC" {
-  lifecycle {
-    precondition {
-      condition     = false
-      error_message = "!!! SUCCESS: TFC IS FINALLY SEEING THE NEW CODE !!!"
-    }
-  }
-}
-# ------------------------------------
-
 locals {
   _ctx = {
     for k, v in var.context : k => merge(
@@ -88,10 +75,6 @@ locals {
   ]...)
 }
 
-output "debug_paths" {
-  value = local.paths
-}
-
 # TODO: streamine location replacements
 
 resource "terraform_data" "precondition" {
@@ -115,17 +98,6 @@ resource "terraform_data" "precondition" {
       )
       error_message = "Prefix must be set in project defaults or overrides."
     }
-    precondition {
-      condition     = false
-      error_message = "DEBUG PATHS: ${jsonencode(local.paths)}"
-    }
-resource "null_resource" "debug_ls" {
-  provisioner "local-exec" {
-    command = "ls -R ../.."
   }
-}
-
-output "workspace_root_ls" {
-  value = "Check TFC logs for local-exec output"
 }
 

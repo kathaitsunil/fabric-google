@@ -14,13 +14,9 @@
  * limitations under the License.
  */
 
-variable "FORCE_FAIL_SYNC_ERROR" {
-  type = string
-  default = "THIS_MUST_FAIL_IF_SYNCED"
-  validation {
-    condition = false
-    error_message = "!!! VERIFIED: TFC IS READING VARIABLES.TF !!!"
-  }
+variable "billing_account" {
+  description = "Billing account ID."
+  type        = string
 }
 
 variable "context" {
@@ -70,4 +66,22 @@ variable "org_policies_imports" {
   type        = list(string)
   nullable    = false
   default     = []
+}
+
+variable "organization" {
+  description = "Organization details."
+  type = object({
+    domain      = string
+    id          = number
+    customer_id = string
+  })
+}
+
+variable "prefix" {
+  description = "Prefix used for resources that need unique names. Use 9 characters max."
+  type        = string
+  validation {
+    condition     = length(var.prefix) <= 9
+    error_message = "Prefix length must be 9 or less."
+  }
 }
