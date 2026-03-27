@@ -128,6 +128,6 @@ module "service_accounts-iam" {
   iam                   = each.value.iam
   iam_bindings          = each.value.iam_bindings
   iam_bindings_additive = each.value.iam_bindings_additive
-  iam_by_principals     = each.value.iam_by_principals
+  iam_by_principals = lookup(each.value, "iam_by_principals", {})
   iam_sa_roles          = each.value.iam_sa_roles
 }
