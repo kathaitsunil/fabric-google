@@ -26,7 +26,7 @@ locals {
 }
 
 module "factory" {
-  source = "../../../modules/project-factory"
+  source = "github.com/kathaitsunil/fabric-google//modules/project-factory?ref=master"
   data_defaults = merge(
     local.project_defaults.defaults,
     local.factory_billing,

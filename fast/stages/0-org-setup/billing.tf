@@ -35,7 +35,7 @@ locals {
 }
 
 module "billing-accounts" {
-  source   = "../../../modules/billing-account"
+  source   = "github.com/kathaitsunil/fabric-google//modules/billing-account?ref=master"
   for_each = local.billing_accounts
   id       = each.value.id
   context = merge(local.ctx, {
