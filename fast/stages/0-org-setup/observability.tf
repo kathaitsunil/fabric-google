@@ -27,7 +27,7 @@ locals {
 }
 
 module "projects-observability" {
-  source = "github.com/kathaitsunil/fabric-google//modules/projects-data-source?ref=master"
+  source = "github.com/kathaitsunil/fabric-google//modules/project?ref=master"
   count = (
     local.ob_project.project_id != null && local.ob_project.number != null ? 1 : 0
   )
