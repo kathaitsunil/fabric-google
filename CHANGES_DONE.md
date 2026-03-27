@@ -13,8 +13,11 @@ This document tracks the changes made to the Cloud Foundation Fabric repository 
 *   **Files:**
     *   [`modules/project-factory/projects-service-accounts.tf`](file:///c:/Users/Dell/terraform/Zuric-GCP/cloud-foundation-fabric/modules/project-factory/projects-service-accounts.tf)
     *   [`modules/project-factory/automation.tf`](file:///c:/Users/Dell/terraform/Zuric-GCP/cloud-foundation-fabric/modules/project-factory/automation.tf)
-*   **Action:** Added support for the `iam_by_principals` field in the service account and automation logic.
-*   **Purpose:** The project factory was previously ignoring this field for service accounts. These changes ensure that the field is passed to the underlying `iam-service-account` module and correctly applied in GCP.
+*   **Action:**
+    *   Restructured IAM resource creation to safely handle `iam_by_principals`, `iam`, and `iam_bindings`.
+    *   Updated `for_each` conditions to ensure service accounts with *only* Workload Identity bindings are correctly processed.
+    *   Used `lookup()` to prevent "Missing Attribute" errors when fields are not present in YAML.
+*   **Purpose:** To ensure reliable and complete IAM binding application for all service account types across all projects.
 
 ### 3. JSON Schema Updates
 *   **Files:**

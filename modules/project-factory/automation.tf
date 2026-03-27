@@ -61,7 +61,6 @@ locals {
         name               = sk
         parent             = k
         prefix             = try(sv.prefix, v.parent_name)
-        iam_by_principals  = try(sv.iam_by_principals, {})
       })
     ] if v.service_accounts != null
   ]))
@@ -145,24 +144,24 @@ module "automation-service-accounts" {
       local.projects_sas_iam_emails
     )
   })
-  iam                    = lookup(each.value, "iam", {})
-  iam_bindings           = lookup(each.value, "iam_bindings", {})
-  iam_bindings_additive  = lookup(each.value, "iam_bindings_additive", {})
-  iam_billing_roles      = lookup(each.value, "iam_billing_roles", {})
-  iam_folder_roles       = lookup(each.value, "iam_folder_roles", {})
-  iam_organization_roles = lookup(each.value, "iam_organization_roles", {})
-  iam_project_roles      = lookup(each.value, "iam_project_roles", {})
-  iam_sa_roles           = lookup(each.value, "iam_sa_roles", {})
-  iam_by_principals      = lookup(each.value, "iam_by_principals", {})
-  # we don't interpolate buckets here as we can't use a dynamic key
-  iam_storage_roles = lookup(each.value, "iam_storage_roles", {})
 }
 
 module "automation-service-accounts-iam" {
   source = "../iam-service-account"
   for_each = {
     for k, v in local.automation_sas :
-    k => v if lookup(v, "iam_sa_roles", null) != null
+    k => v if(
+      lookup(v, "iam", {}) != {} ||
+      lookup(v, "iam_bindings", {}) != {} ||
+      lookup(v, "iam_bindings_additive", {}) != {} ||
+      lookup(v, "iam_billing_roles", {}) != {} ||
+      lookup(v, "iam_folder_roles", {}) != {} ||
+      lookup(v, "iam_organization_roles", {}) != {} ||
+      lookup(v, "iam_project_roles", {}) != {} ||
+      lookup(v, "iam_sa_roles", {}) != {} ||
+      lookup(v, "iam_by_principals", {}) != {} ||
+      lookup(v, "iam_storage_roles", {}) != {}
+    )
   }
   project_id = (
     module.automation-service-accounts[each.key].service_account.project
@@ -172,7 +171,22 @@ module "automation-service-accounts-iam" {
     use_data_source = false
   }
   context = merge(local.ctx, {
+    project_ids = local.ctx_project_ids
+    iam_principals = merge(
+      local.ctx.iam_principals,
+      local.projects_sas_iam_emails,
+      local.automation_sas_iam_emails
+    )
     service_account_ids = local.projects_sas_ids
   })
-  iam_sa_roles = lookup(each.value, "iam_sa_roles", {})
+  iam                    = lookup(each.value, "iam", {})
+  iam_bindings           = lookup(each.value, "iam_bindings", {})
+  iam_bindings_additive  = lookup(each.value, "iam_bindings_additive", {})
+  iam_billing_roles      = lookup(each.value, "iam_billing_roles", {})
+  iam_folder_roles       = lookup(each.value, "iam_folder_roles", {})
+  iam_organization_roles = lookup(each.value, "iam_organization_roles", {})
+  iam_project_roles      = lookup(each.value, "iam_project_roles", {})
+  iam_sa_roles           = lookup(each.value, "iam_sa_roles", {})
+  iam_by_principals      = lookup(each.value, "iam_by_principals", {})
+  iam_storage_roles      = lookup(each.value, "iam_storage_roles", {})
 }

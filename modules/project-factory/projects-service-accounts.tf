@@ -103,7 +103,7 @@ module "service_accounts-iam" {
   for_each = {
     for k in local.projects_service_accounts :
     "${k.project_key}/${k.name}" => k
-    if k.iam_sa_roles != {} || k.iam != {}
+    if k.iam_sa_roles != {} || k.iam != {} || k.iam_by_principals != {}
   }
   project_id = (
     module.service-accounts[each.key].service_account.project
@@ -128,6 +128,6 @@ module "service_accounts-iam" {
   iam                   = each.value.iam
   iam_bindings          = each.value.iam_bindings
   iam_bindings_additive = each.value.iam_bindings_additive
-  iam_by_principals = lookup(each.value, "iam_by_principals", {})
+  iam_by_principals     = lookup(each.value, "iam_by_principals", {})
   iam_sa_roles          = each.value.iam_sa_roles
 }
