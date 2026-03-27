@@ -14,9 +14,8 @@
 
 # yaml-language-server: $schema=../../../../schemas/project.schema.json
 
-name: sun21-prod-billing-exp-2
+name: prod-billing-exp-2
 parent: "$folder_ids:prod/iac"
-prefix: null
 iam_by_principals:
   $iam_principals:service_accounts/iac-0/iac-org-ro:
     - roles/viewer
