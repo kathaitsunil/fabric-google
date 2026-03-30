@@ -17,6 +17,8 @@
 id: folders/1016657635491
 name: Networking
 iam_by_principals:
+  $iam_principals:service_accounts/iac-0/iac-org-rw:
+    - roles/resourcemanager.folderAdmin
   $iam_principals:service_accounts/iac-0/iac-networking-rw:
     - roles/compute.xpnAdmin
     - roles/logging.admin

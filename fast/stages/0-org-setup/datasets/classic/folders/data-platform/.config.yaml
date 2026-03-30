@@ -16,3 +16,6 @@
 
 id: folders/607789407638
 name: Data Platform
+iam_by_principals:
+  $iam_principals:service_accounts/iac-0/iac-org-rw:
+    - roles/resourcemanager.folderAdmin

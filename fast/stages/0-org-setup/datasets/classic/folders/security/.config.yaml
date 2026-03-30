@@ -17,6 +17,8 @@
 id: folders/272287485262
 name: Security
 iam_by_principals:
+  $iam_principals:service_accounts/iac-0/iac-org-rw:
+    - roles/resourcemanager.folderAdmin
   $iam_principals:service_accounts/iac-0/iac-security-rw:
     - roles/logging.admin
     - roles/owner

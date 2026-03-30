@@ -17,6 +17,8 @@
 id: folders/833671635990
 name: Teams
 iam_by_principals:
+  $iam_principals:service_accounts/iac-0/iac-org-rw:
+    - roles/resourcemanager.folderAdmin
   $iam_principals:service_accounts/iac-0/iac-pf-rw:
     - roles/owner
     - roles/resourcemanager.folderAdmin
