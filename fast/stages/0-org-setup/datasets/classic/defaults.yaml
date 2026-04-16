@@ -20,7 +20,7 @@ global:
   organization:
     # use `gcloud organizations list`` to populate
     domain: fast-test-00.example.com
-    id: 1234567890
+    id: 254926364766
     customer_id: abcd123456
 observability:
   project_id: $project_ids:log-0
