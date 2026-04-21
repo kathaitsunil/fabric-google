@@ -19,18 +19,9 @@ global:
   billing_account: 01895E-E57953-1DB141
   organization:
     # use `gcloud organizations list`` to populate
-<<<<<<< HEAD
-    domain: fast-test-00.example.com
-    id: 254926364766
-    customer_id: abcd123456
-observability:
-  project_id: $project_ids:log-0
-  number: $project_numbers:log-0
-=======
     domain: kathaitsun.com
     id: 254926364766
     customer_id: C03b3mev4
->>>>>>> main
 projects:
   defaults:
     # prefix must be unique and less than 9 characters
