@@ -140,8 +140,8 @@ module "organization-iam" {
     )
   })
   factories_config = {
-    org_policy_custom_constraints = "${local.paths.organization}/custom-constraints"
-    org_policies                  = "${local.paths.organization}/org-policies"
+    # org_policy_custom_constraints = "${local.paths.organization}/custom-constraints"
+    # org_policies                  = "${local.paths.organization}/org-policies"
     tags                          = "${local.paths.organization}/tags"
   }
   iam = lookup(

@@ -1,0 +1,2538 @@
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+-/+ destroy and then create replacement
+
+Terraform will perform the following actions:
+
+  # google_storage_bucket_object.providers["0-org-setup"] will be created
+  + resource "google_storage_bucket_object" "providers" {
+      + bucket         = "sun21-prod-iac-core-0-iac-outputs"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + generation     = (known after apply)
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + md5hexhash     = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "providers/0-org-setup-providers.tf"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + source_md5hash = "8c5da84b6f105f7285759de22e3e2ecf"
+      + storage_class  = (known after apply)
+    }
+
+  # google_storage_bucket_object.providers["0-org-setup-ro"] will be created
+  + resource "google_storage_bucket_object" "providers" {
+      + bucket         = "sun21-prod-iac-core-0-iac-outputs"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + generation     = (known after apply)
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + md5hexhash     = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "providers/0-org-setup-ro-providers.tf"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + source_md5hash = "cacb648bef7a0528be26f15c0647e9c6"
+      + storage_class  = (known after apply)
+    }
+
+  # google_storage_bucket_object.providers["1-vpcsc"] will be created
+  + resource "google_storage_bucket_object" "providers" {
+      + bucket         = "sun21-prod-iac-core-0-iac-outputs"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + generation     = (known after apply)
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + md5hexhash     = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "providers/1-vpcsc-providers.tf"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + source_md5hash = "871d4303a5076dcfb6a50adb149aaff2"
+      + storage_class  = (known after apply)
+    }
+
+  # google_storage_bucket_object.providers["1-vpcsc-ro"] will be created
+  + resource "google_storage_bucket_object" "providers" {
+      + bucket         = "sun21-prod-iac-core-0-iac-outputs"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + generation     = (known after apply)
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + md5hexhash     = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "providers/1-vpcsc-ro-providers.tf"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + source_md5hash = "b4a5218b9ec4d74c4f0f20f00e2a4467"
+      + storage_class  = (known after apply)
+    }
+
+  # google_storage_bucket_object.providers["2-networking"] will be created
+  + resource "google_storage_bucket_object" "providers" {
+      + bucket         = "sun21-prod-iac-core-0-iac-outputs"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + generation     = (known after apply)
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + md5hexhash     = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "providers/2-networking-providers.tf"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + source_md5hash = "a58d4c1c8fea3ee0a83cebe27bf1e227"
+      + storage_class  = (known after apply)
+    }
+
+  # google_storage_bucket_object.providers["2-networking-ro"] will be created
+  + resource "google_storage_bucket_object" "providers" {
+      + bucket         = "sun21-prod-iac-core-0-iac-outputs"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + generation     = (known after apply)
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + md5hexhash     = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "providers/2-networking-ro-providers.tf"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + source_md5hash = "f9c812259185cc5c75c50981f4506a63"
+      + storage_class  = (known after apply)
+    }
+
+  # google_storage_bucket_object.providers["2-project-factory"] will be created
+  + resource "google_storage_bucket_object" "providers" {
+      + bucket         = "sun21-prod-iac-core-0-iac-outputs"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + generation     = (known after apply)
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + md5hexhash     = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "providers/2-project-factory-providers.tf"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + source_md5hash = "35b33b9f668047ff279fb3c0cfda5d56"
+      + storage_class  = (known after apply)
+    }
+
+  # google_storage_bucket_object.providers["2-project-factory-ro"] will be created
+  + resource "google_storage_bucket_object" "providers" {
+      + bucket         = "sun21-prod-iac-core-0-iac-outputs"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + generation     = (known after apply)
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + md5hexhash     = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "providers/2-project-factory-ro-providers.tf"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + source_md5hash = "daf17d97fe557a242ba53e92f21c70b5"
+      + storage_class  = (known after apply)
+    }
+
+  # google_storage_bucket_object.providers["2-security"] will be created
+  + resource "google_storage_bucket_object" "providers" {
+      + bucket         = "sun21-prod-iac-core-0-iac-outputs"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + generation     = (known after apply)
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + md5hexhash     = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "providers/2-security-providers.tf"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + source_md5hash = "0d2306a502d8d06c8fc55c1f24ec9f3c"
+      + storage_class  = (known after apply)
+    }
+
+  # google_storage_bucket_object.providers["2-security-ro"] will be created
+  + resource "google_storage_bucket_object" "providers" {
+      + bucket         = "sun21-prod-iac-core-0-iac-outputs"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + generation     = (known after apply)
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + md5hexhash     = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "providers/2-security-ro-providers.tf"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + source_md5hash = "d6cc536b2d5e678be5b12f00b167afd1"
+      + storage_class  = (known after apply)
+    }
+
+  # google_storage_bucket_object.providers["3-data-platform-dev"] will be created
+  + resource "google_storage_bucket_object" "providers" {
+      + bucket         = "sun21-prod-iac-core-0-iac-outputs"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + generation     = (known after apply)
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + md5hexhash     = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "providers/3-data-platform-dev-providers.tf"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + source_md5hash = "2238920e483d0806a534abb4bf71a847"
+      + storage_class  = (known after apply)
+    }
+
+  # google_storage_bucket_object.providers["3-data-platform-dev-ro"] will be created
+  + resource "google_storage_bucket_object" "providers" {
+      + bucket         = "sun21-prod-iac-core-0-iac-outputs"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + generation     = (known after apply)
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + md5hexhash     = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "providers/3-data-platform-dev-ro-providers.tf"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + source_md5hash = "af300e3a949f274eaa28de08c24c1d88"
+      + storage_class  = (known after apply)
+    }
+
+  # google_storage_bucket_object.tfvars["globals"] will be created
+  + resource "google_storage_bucket_object" "tfvars" {
+      + bucket         = "sun21-prod-iac-core-0-iac-outputs"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + generation     = (known after apply)
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + md5hexhash     = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "tfvars/0-globals.auto.tfvars.json"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + source_md5hash = "8c0689390a754701a5573fd45f79ebad"
+      + storage_class  = (known after apply)
+    }
+
+  # google_storage_bucket_object.tfvars["org-setup"] will be created
+  + resource "google_storage_bucket_object" "tfvars" {
+      + bucket         = "sun21-prod-iac-core-0-iac-outputs"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + generation     = (known after apply)
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + md5hexhash     = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "tfvars/0-org-setup.auto.tfvars.json"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + source_md5hash = "3c50e2b78d9c4f2ab91776fc168a6971"
+      + storage_class  = (known after apply)
+    }
+
+  # google_storage_bucket_object.version[0] will be created
+  + resource "google_storage_bucket_object" "version" {
+      + bucket         = "sun21-prod-iac-core-0-iac-outputs"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + generation     = (known after apply)
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + md5hexhash     = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "versions/0-org-setup-version.txt"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + source         = "fast_version.txt"
+      + source_md5hash = "4e95a11e91e9d611c5c73d2c097fc9a3"
+      + storage_class  = (known after apply)
+    }
+
+  # local_file.providers["0-org-setup"] will be created
+  + resource "local_file" "providers" {
+      + content              = <<-EOT
+            /**
+             * Copyright 2022 Google LLC
+             *
+             * Licensed under the Apache License, Version 2.0 (the "License");
+             * you may not use this file except in compliance with the License.
+             * You may obtain a copy of the License at
+             *
+             *      http://www.apache.org/licenses/LICENSE-2.0
+             *
+             * Unless required by applicable law or agreed to in writing, software
+             * distributed under the License is distributed on an "AS IS" BASIS,
+             * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+             * See the License for the specific language governing permissions and
+             * limitations under the License.
+             */
+            
+            terraform {
+              cloud {
+                organization = "terraform-cloud-deployment-GCP"
+                workspaces {
+                  name = "fabric-google"
+                }
+              }
+            }
+            provider "google" {
+              impersonate_service_account = "iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+            provider "google-beta" {
+              impersonate_service_account = "iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+        EOT
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0644"
+      + filename             = "C:\\Users\\Dell\\fast-config\\fast-test-00/providers/0-org-setup-providers.tf"
+      + id                   = (known after apply)
+    }
+
+  # local_file.providers["0-org-setup-ro"] will be created
+  + resource "local_file" "providers" {
+      + content              = <<-EOT
+            /**
+             * Copyright 2022 Google LLC
+             *
+             * Licensed under the Apache License, Version 2.0 (the "License");
+             * you may not use this file except in compliance with the License.
+             * You may obtain a copy of the License at
+             *
+             *      http://www.apache.org/licenses/LICENSE-2.0
+             *
+             * Unless required by applicable law or agreed to in writing, software
+             * distributed under the License is distributed on an "AS IS" BASIS,
+             * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+             * See the License for the specific language governing permissions and
+             * limitations under the License.
+             */
+            
+            terraform {
+              cloud {
+                organization = "terraform-cloud-deployment-GCP"
+                workspaces {
+                  name = "fabric-google-0-org-setup-ro"
+                }
+              }
+            }
+            provider "google" {
+              impersonate_service_account = "iac-org-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+            provider "google-beta" {
+              impersonate_service_account = "iac-org-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+        EOT
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0644"
+      + filename             = "C:\\Users\\Dell\\fast-config\\fast-test-00/providers/0-org-setup-ro-providers.tf"
+      + id                   = (known after apply)
+    }
+
+  # local_file.providers["1-vpcsc"] will be created
+  + resource "local_file" "providers" {
+      + content              = <<-EOT
+            /**
+             * Copyright 2022 Google LLC
+             *
+             * Licensed under the Apache License, Version 2.0 (the "License");
+             * you may not use this file except in compliance with the License.
+             * You may obtain a copy of the License at
+             *
+             *      http://www.apache.org/licenses/LICENSE-2.0
+             *
+             * Unless required by applicable law or agreed to in writing, software
+             * distributed under the License is distributed on an "AS IS" BASIS,
+             * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+             * See the License for the specific language governing permissions and
+             * limitations under the License.
+             */
+            
+            terraform {
+              cloud {
+                organization = "terraform-cloud-deployment-GCP"
+                workspaces {
+                  name = "fabric-google-vpcsc"
+                }
+              }
+            }
+            provider "google" {
+              impersonate_service_account = "iac-vpcsc-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+            provider "google-beta" {
+              impersonate_service_account = "iac-vpcsc-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+        EOT
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0644"
+      + filename             = "C:\\Users\\Dell\\fast-config\\fast-test-00/providers/1-vpcsc-providers.tf"
+      + id                   = (known after apply)
+    }
+
+  # local_file.providers["1-vpcsc-ro"] will be created
+  + resource "local_file" "providers" {
+      + content              = <<-EOT
+            /**
+             * Copyright 2022 Google LLC
+             *
+             * Licensed under the Apache License, Version 2.0 (the "License");
+             * you may not use this file except in compliance with the License.
+             * You may obtain a copy of the License at
+             *
+             *      http://www.apache.org/licenses/LICENSE-2.0
+             *
+             * Unless required by applicable law or agreed to in writing, software
+             * distributed under the License is distributed on an "AS IS" BASIS,
+             * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+             * See the License for the specific language governing permissions and
+             * limitations under the License.
+             */
+            
+            terraform {
+              cloud {
+                organization = "terraform-cloud-deployment-GCP"
+                workspaces {
+                  name = "fabric-google-1-vpcsc-ro"
+                }
+              }
+            }
+            provider "google" {
+              impersonate_service_account = "iac-vpcsc-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+            provider "google-beta" {
+              impersonate_service_account = "iac-vpcsc-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+        EOT
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0644"
+      + filename             = "C:\\Users\\Dell\\fast-config\\fast-test-00/providers/1-vpcsc-ro-providers.tf"
+      + id                   = (known after apply)
+    }
+
+  # local_file.providers["2-networking"] will be created
+  + resource "local_file" "providers" {
+      + content              = <<-EOT
+            /**
+             * Copyright 2022 Google LLC
+             *
+             * Licensed under the Apache License, Version 2.0 (the "License");
+             * you may not use this file except in compliance with the License.
+             * You may obtain a copy of the License at
+             *
+             *      http://www.apache.org/licenses/LICENSE-2.0
+             *
+             * Unless required by applicable law or agreed to in writing, software
+             * distributed under the License is distributed on an "AS IS" BASIS,
+             * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+             * See the License for the specific language governing permissions and
+             * limitations under the License.
+             */
+            
+            terraform {
+              cloud {
+                organization = "terraform-cloud-deployment-GCP"
+                workspaces {
+                  name = "fabric-google-net"
+                }
+              }
+            }
+            provider "google" {
+              impersonate_service_account = "iac-networking-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+            provider "google-beta" {
+              impersonate_service_account = "iac-networking-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+        EOT
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0644"
+      + filename             = "C:\\Users\\Dell\\fast-config\\fast-test-00/providers/2-networking-providers.tf"
+      + id                   = (known after apply)
+    }
+
+  # local_file.providers["2-networking-ro"] will be created
+  + resource "local_file" "providers" {
+      + content              = <<-EOT
+            /**
+             * Copyright 2022 Google LLC
+             *
+             * Licensed under the Apache License, Version 2.0 (the "License");
+             * you may not use this file except in compliance with the License.
+             * You may obtain a copy of the License at
+             *
+             *      http://www.apache.org/licenses/LICENSE-2.0
+             *
+             * Unless required by applicable law or agreed to in writing, software
+             * distributed under the License is distributed on an "AS IS" BASIS,
+             * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+             * See the License for the specific language governing permissions and
+             * limitations under the License.
+             */
+            
+            terraform {
+              cloud {
+                organization = "terraform-cloud-deployment-GCP"
+                workspaces {
+                  name = "fabric-google-2-networking-ro"
+                }
+              }
+            }
+            provider "google" {
+              impersonate_service_account = "iac-networking-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+            provider "google-beta" {
+              impersonate_service_account = "iac-networking-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+        EOT
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0644"
+      + filename             = "C:\\Users\\Dell\\fast-config\\fast-test-00/providers/2-networking-ro-providers.tf"
+      + id                   = (known after apply)
+    }
+
+  # local_file.providers["2-project-factory"] will be created
+  + resource "local_file" "providers" {
+      + content              = <<-EOT
+            /**
+             * Copyright 2022 Google LLC
+             *
+             * Licensed under the Apache License, Version 2.0 (the "License");
+             * you may not use this file except in compliance with the License.
+             * You may obtain a copy of the License at
+             *
+             *      http://www.apache.org/licenses/LICENSE-2.0
+             *
+             * Unless required by applicable law or agreed to in writing, software
+             * distributed under the License is distributed on an "AS IS" BASIS,
+             * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+             * See the License for the specific language governing permissions and
+             * limitations under the License.
+             */
+            
+            terraform {
+              cloud {
+                organization = "terraform-cloud-deployment-GCP"
+                workspaces {
+                  name = "fabric-google-2-project-factory"
+                }
+              }
+            }
+            provider "google" {
+              impersonate_service_account = "iac-pf-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+            provider "google-beta" {
+              impersonate_service_account = "iac-pf-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+        EOT
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0644"
+      + filename             = "C:\\Users\\Dell\\fast-config\\fast-test-00/providers/2-project-factory-providers.tf"
+      + id                   = (known after apply)
+    }
+
+  # local_file.providers["2-project-factory-ro"] will be created
+  + resource "local_file" "providers" {
+      + content              = <<-EOT
+            /**
+             * Copyright 2022 Google LLC
+             *
+             * Licensed under the Apache License, Version 2.0 (the "License");
+             * you may not use this file except in compliance with the License.
+             * You may obtain a copy of the License at
+             *
+             *      http://www.apache.org/licenses/LICENSE-2.0
+             *
+             * Unless required by applicable law or agreed to in writing, software
+             * distributed under the License is distributed on an "AS IS" BASIS,
+             * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+             * See the License for the specific language governing permissions and
+             * limitations under the License.
+             */
+            
+            terraform {
+              cloud {
+                organization = "terraform-cloud-deployment-GCP"
+                workspaces {
+                  name = "fabric-google-2-project-factory-ro"
+                }
+              }
+            }
+            provider "google" {
+              impersonate_service_account = "iac-pf-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+            provider "google-beta" {
+              impersonate_service_account = "iac-pf-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+        EOT
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0644"
+      + filename             = "C:\\Users\\Dell\\fast-config\\fast-test-00/providers/2-project-factory-ro-providers.tf"
+      + id                   = (known after apply)
+    }
+
+  # local_file.providers["2-security"] will be created
+  + resource "local_file" "providers" {
+      + content              = <<-EOT
+            /**
+             * Copyright 2022 Google LLC
+             *
+             * Licensed under the Apache License, Version 2.0 (the "License");
+             * you may not use this file except in compliance with the License.
+             * You may obtain a copy of the License at
+             *
+             *      http://www.apache.org/licenses/LICENSE-2.0
+             *
+             * Unless required by applicable law or agreed to in writing, software
+             * distributed under the License is distributed on an "AS IS" BASIS,
+             * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+             * See the License for the specific language governing permissions and
+             * limitations under the License.
+             */
+            
+            terraform {
+              cloud {
+                organization = "terraform-cloud-deployment-GCP"
+                workspaces {
+                  name = "fabric-google-sec"
+                }
+              }
+            }
+            provider "google" {
+              impersonate_service_account = "iac-security-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+            provider "google-beta" {
+              impersonate_service_account = "iac-security-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+        EOT
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0644"
+      + filename             = "C:\\Users\\Dell\\fast-config\\fast-test-00/providers/2-security-providers.tf"
+      + id                   = (known after apply)
+    }
+
+  # local_file.providers["2-security-ro"] will be created
+  + resource "local_file" "providers" {
+      + content              = <<-EOT
+            /**
+             * Copyright 2022 Google LLC
+             *
+             * Licensed under the Apache License, Version 2.0 (the "License");
+             * you may not use this file except in compliance with the License.
+             * You may obtain a copy of the License at
+             *
+             *      http://www.apache.org/licenses/LICENSE-2.0
+             *
+             * Unless required by applicable law or agreed to in writing, software
+             * distributed under the License is distributed on an "AS IS" BASIS,
+             * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+             * See the License for the specific language governing permissions and
+             * limitations under the License.
+             */
+            
+            terraform {
+              cloud {
+                organization = "terraform-cloud-deployment-GCP"
+                workspaces {
+                  name = "fabric-google-2-security-ro"
+                }
+              }
+            }
+            provider "google" {
+              impersonate_service_account = "iac-security-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+            provider "google-beta" {
+              impersonate_service_account = "iac-security-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+        EOT
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0644"
+      + filename             = "C:\\Users\\Dell\\fast-config\\fast-test-00/providers/2-security-ro-providers.tf"
+      + id                   = (known after apply)
+    }
+
+  # local_file.providers["3-data-platform-dev"] will be created
+  + resource "local_file" "providers" {
+      + content              = <<-EOT
+            /**
+             * Copyright 2022 Google LLC
+             *
+             * Licensed under the Apache License, Version 2.0 (the "License");
+             * you may not use this file except in compliance with the License.
+             * You may obtain a copy of the License at
+             *
+             *      http://www.apache.org/licenses/LICENSE-2.0
+             *
+             * Unless required by applicable law or agreed to in writing, software
+             * distributed under the License is distributed on an "AS IS" BASIS,
+             * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+             * See the License for the specific language governing permissions and
+             * limitations under the License.
+             */
+            
+            terraform {
+              cloud {
+                organization = "terraform-cloud-deployment-GCP"
+                workspaces {
+                  name = "fabric-google-3-data-platform-dev"
+                }
+              }
+            }
+            provider "google" {
+              impersonate_service_account = "iac-dp-dev-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+            provider "google-beta" {
+              impersonate_service_account = "iac-dp-dev-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+        EOT
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0644"
+      + filename             = "C:\\Users\\Dell\\fast-config\\fast-test-00/providers/3-data-platform-dev-providers.tf"
+      + id                   = (known after apply)
+    }
+
+  # local_file.providers["3-data-platform-dev-ro"] will be created
+  + resource "local_file" "providers" {
+      + content              = <<-EOT
+            /**
+             * Copyright 2022 Google LLC
+             *
+             * Licensed under the Apache License, Version 2.0 (the "License");
+             * you may not use this file except in compliance with the License.
+             * You may obtain a copy of the License at
+             *
+             *      http://www.apache.org/licenses/LICENSE-2.0
+             *
+             * Unless required by applicable law or agreed to in writing, software
+             * distributed under the License is distributed on an "AS IS" BASIS,
+             * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+             * See the License for the specific language governing permissions and
+             * limitations under the License.
+             */
+            
+            terraform {
+              cloud {
+                organization = "terraform-cloud-deployment-GCP"
+                workspaces {
+                  name = "fabric-google-3-data-platform-dev-ro"
+                }
+              }
+            }
+            provider "google" {
+              impersonate_service_account = "iac-dp-dev-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+            provider "google-beta" {
+              impersonate_service_account = "iac-dp-dev-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+            }
+        EOT
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0644"
+      + filename             = "C:\\Users\\Dell\\fast-config\\fast-test-00/providers/3-data-platform-dev-ro-providers.tf"
+      + id                   = (known after apply)
+    }
+
+  # local_file.tfvars["globals"] will be created
+  + resource "local_file" "tfvars" {
+      + content              = jsonencode(
+            {
+              + billing_account = {
+                  + id = "01895E-E57953-1DB141"
+                }
+              + groups          = {
+                  + domain                  = "domain:kathaitsun.com"
+                  + gcp-billing-admins      = "group:gcp-billing-admins@kathaitsun.com"
+                  + gcp-devops              = "group:gcp-devops@kathaitsun.com"
+                  + gcp-network-admins      = "group:gcp-network-admins@kathaitsun.com"
+                  + gcp-organization-admins = "group:gcp-organization-admins@kathaitsun.com"
+                  + gcp-secops-admins       = "group:gcp-secops-admins@kathaitsun.com"
+                  + gcp-security-admins     = "group:gcp-security-admins@kathaitsun.com"
+                  + gcp-support             = "group:gcp-support@kathaitsun.com"
+                }
+              + organization    = {
+                  + customer_id = "C03b3mev4"
+                  + domain      = "kathaitsun.com"
+                  + id          = "254926364766"
+                }
+              + prefix          = "sun21"
+              + universe        = null
+            }
+        )
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0644"
+      + filename             = "C:\\Users\\Dell\\fast-config\\fast-test-00/tfvars/0-globals.auto.tfvars.json"
+      + id                   = (known after apply)
+    }
+
+  # local_file.tfvars["org-setup"] will be created
+  + resource "local_file" "tfvars" {
+      + content              = jsonencode(
+            {
+              + automation                   = {
+                  + outputs_bucket = "sun21-prod-iac-core-0-iac-outputs"
+                }
+              + custom_roles                 = {
+                  + network_firewall_policies_admin = "organizations/254926364766/roles/networkFirewallPoliciesAdmin"
+                  + ngfw_enterprise_admin           = "organizations/254926364766/roles/ngfwEnterpriseAdmin"
+                  + ngfw_enterprise_viewer          = "organizations/254926364766/roles/ngfwEnterpriseViewer"
+                  + organization_admin_viewer       = "organizations/254926364766/roles/organizationAdminViewer"
+                  + organization_iam_admin          = "organizations/254926364766/roles/organizationIamAdmin"
+                  + project_iam_viewer              = "organizations/254926364766/roles/projectIamViewer"
+                  + service_project_network_admin   = "organizations/254926364766/roles/serviceProjectNetworkAdmin"
+                  + storage_viewer                  = "organizations/254926364766/roles/storageViewer"
+                  + tag_viewer                      = "organizations/254926364766/roles/tagViewer"
+                }
+              + folder_ids                   = {}
+              + iam_principals               = {
+                  + domain                  = "domain:kathaitsun.com"
+                  + gcp-billing-admins      = "group:gcp-billing-admins@kathaitsun.com"
+                  + gcp-devops              = "group:gcp-devops@kathaitsun.com"
+                  + gcp-network-admins      = "group:gcp-network-admins@kathaitsun.com"
+                  + gcp-organization-admins = "group:gcp-organization-admins@kathaitsun.com"
+                  + gcp-secops-admins       = "group:gcp-secops-admins@kathaitsun.com"
+                  + gcp-security-admins     = "group:gcp-security-admins@kathaitsun.com"
+                  + gcp-support             = "group:gcp-support@kathaitsun.com"
+                }
+              + logging                      = {
+                  + project_number    = null
+                  + writer_identities = {}
+                }
+              + project_ids                  = {
+                  + iac-0 = "sun21-prod-iac-core-0"
+                }
+              + project_numbers              = {
+                  + iac-0 = "705034650203"
+                }
+              + service_accounts             = {
+                  + "iac-0/iac-dp-dev-ro"     = "iac-dp-dev-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+                  + "iac-0/iac-dp-dev-rw"     = "iac-dp-dev-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+                  + "iac-0/iac-networking-ro" = "iac-networking-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+                  + "iac-0/iac-networking-rw" = "iac-networking-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+                  + "iac-0/iac-org-cicd-ro"   = "iac-org-cicd-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+                  + "iac-0/iac-org-cicd-rw"   = "iac-org-cicd-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+                  + "iac-0/iac-org-ro"        = "iac-org-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+                  + "iac-0/iac-org-rw"        = "iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+                  + "iac-0/iac-pf-ro"         = "iac-pf-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+                  + "iac-0/iac-pf-rw"         = "iac-pf-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+                  + "iac-0/iac-security-ro"   = "iac-security-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+                  + "iac-0/iac-security-rw"   = "iac-security-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+                  + "iac-0/iac-vpcsc-ro"      = "iac-vpcsc-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+                  + "iac-0/iac-vpcsc-rw"      = "iac-vpcsc-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+                }
+              + storage_buckets              = {
+                  + "iac-0/iac-org-state"   = "sun21-prod-iac-core-0-iac-org-state"
+                  + "iac-0/iac-outputs"     = "sun21-prod-iac-core-0-iac-outputs"
+                  + "iac-0/iac-stage-state" = "sun21-prod-iac-core-0-iac-stage-state"
+                }
+              + tag_values                   = {
+                  + "context/project-factory"                             = "tagValues/281483046600350"
+                  + "environment/development"                             = "tagValues/281481379621075"
+                  + "environment/production"                              = "tagValues/281477705455734"
+                  + "org-policies/allowed-essential-contacts-domains-all" = "tagValues/281480054974602"
+                  + "org-policies/allowed-policy-member-domains-all"      = "tagValues/281482722106435"
+                }
+              + workforce_identity_providers = {}
+              + workload_identity_providers  = {
+                  + "iac-0/tfc-pool/tfc-provider" = "projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/providers/tfc-provider"
+                }
+            }
+        )
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0644"
+      + filename             = "C:\\Users\\Dell\\fast-config\\fast-test-00/tfvars/0-org-setup.auto.tfvars.json"
+      + id                   = (known after apply)
+    }
+
+  # terraform_data.precondition-cicd will be created
+  + resource "terraform_data" "precondition-cicd" {
+      + id = (known after apply)
+    }
+
+  # module.billing-accounts["default"].google_billing_account_iam_member.bindings["billing_admin_org_admins"] will be created
+  + resource "google_billing_account_iam_member" "bindings" {
+      + billing_account_id = "01895E-E57953-1DB141"
+      + etag               = (known after apply)
+      + id                 = (known after apply)
+      + member             = "group:gcp-organization-admins@kathaitsun.com"
+      + role               = "roles/billing.admin"
+    }
+
+  # module.billing-accounts["default"].google_billing_account_iam_member.bindings["billing_admin_org_sa"] will be created
+  + resource "google_billing_account_iam_member" "bindings" {
+      + billing_account_id = "01895E-E57953-1DB141"
+      + etag               = (known after apply)
+      + id                 = (known after apply)
+      + member             = "serviceAccount:iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+      + role               = "roles/billing.admin"
+    }
+
+  # module.billing-accounts["default"].google_billing_account_iam_member.bindings["billing_user_networking_sa"] will be created
+  + resource "google_billing_account_iam_member" "bindings" {
+      + billing_account_id = "01895E-E57953-1DB141"
+      + etag               = (known after apply)
+      + id                 = (known after apply)
+      + member             = "serviceAccount:iac-networking-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+      + role               = "roles/billing.user"
+    }
+
+  # module.billing-accounts["default"].google_billing_account_iam_member.bindings["billing_user_pf_sa"] will be created
+  + resource "google_billing_account_iam_member" "bindings" {
+      + billing_account_id = "01895E-E57953-1DB141"
+      + etag               = (known after apply)
+      + id                 = (known after apply)
+      + member             = "serviceAccount:iac-pf-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+      + role               = "roles/billing.user"
+    }
+
+  # module.billing-accounts["default"].google_billing_account_iam_member.bindings["billing_user_security_sa"] will be created
+  + resource "google_billing_account_iam_member" "bindings" {
+      + billing_account_id = "01895E-E57953-1DB141"
+      + etag               = (known after apply)
+      + id                 = (known after apply)
+      + member             = "serviceAccount:iac-security-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+      + role               = "roles/billing.user"
+    }
+
+  # module.billing-accounts["default"].google_billing_account_iam_member.bindings["billing_viewer_org_ro"] will be created
+  + resource "google_billing_account_iam_member" "bindings" {
+      + billing_account_id = "01895E-E57953-1DB141"
+      + etag               = (known after apply)
+      + id                 = (known after apply)
+      + member             = "serviceAccount:iac-org-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com"
+      + role               = "roles/billing.viewer"
+    }
+
+  # module.organization-iam[0].google_org_policy_custom_constraint.constraint["custom.denyBridgePerimeters"] will be created
+  + resource "google_org_policy_custom_constraint" "constraint" {
+      + action_type    = "DENY"
+      + condition      = "resource.perimeterType == 'PERIMETER_TYPE_BRIDGE'"
+      + description    = "Disables the use of perimeter bridges. Instead, use ingress and egress rules."
+      + display_name   = "Disable perimeter bridges"
+      + id             = (known after apply)
+      + method_types   = [
+          + "CREATE",
+          + "UPDATE",
+        ]
+      + name           = "custom.denyBridgePerimeters"
+      + parent         = "organizations/254926364766"
+      + resource_types = [
+          + "accesscontextmanager.googleapis.com/ServicePerimeter",
+        ]
+      + update_time    = (known after apply)
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["cloudbuild.disableCreateDefaultServiceAccount"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/cloudbuild.disableCreateDefaultServiceAccount"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["cloudbuild.useBuildServiceAccount"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/cloudbuild.useBuildServiceAccount"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["cloudbuild.useComputeServiceAccount"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/cloudbuild.useComputeServiceAccount"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["compute.disableGuestAttributesAccess"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/compute.disableGuestAttributesAccess"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["compute.disableInternetNetworkEndpointGroup"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/compute.disableInternetNetworkEndpointGroup"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["compute.disableNestedVirtualization"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/compute.disableNestedVirtualization"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["compute.disableSerialPortAccess"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/compute.disableSerialPortAccess"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["compute.disableVpcExternalIpv6"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/compute.disableVpcExternalIpv6"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["compute.requireOsLogin"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/compute.requireOsLogin"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["compute.restrictLoadBalancerCreationForTypes"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/compute.restrictLoadBalancerCreationForTypes"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + values {
+                  + allowed_values = [
+                      + "in:INTERNAL",
+                    ]
+                }
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["compute.restrictProtocolForwardingCreationForTypes"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/compute.restrictProtocolForwardingCreationForTypes"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + values {
+                  + allowed_values = [
+                      + "is:INTERNAL",
+                    ]
+                }
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["compute.setNewProjectDefaultToZonalDNSOnly"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/compute.setNewProjectDefaultToZonalDNSOnly"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["compute.skipDefaultNetworkCreation"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/compute.skipDefaultNetworkCreation"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["compute.trustedImageProjects"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/compute.trustedImageProjects"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + values {
+                  + allowed_values = [
+                      + "is:projects/centos-cloud",
+                      + "is:projects/cos-cloud",
+                      + "is:projects/debian-cloud",
+                      + "is:projects/fedora-cloud",
+                      + "is:projects/fedora-coreos-cloud",
+                      + "is:projects/opensuse-cloud",
+                      + "is:projects/rhel-cloud",
+                      + "is:projects/rhel-sap-cloud",
+                      + "is:projects/rocky-linux-cloud",
+                      + "is:projects/suse-cloud",
+                      + "is:projects/suse-sap-cloud",
+                      + "is:projects/ubuntu-os-cloud",
+                      + "is:projects/ubuntu-os-pro-cloud",
+                      + "is:projects/windows-cloud",
+                      + "is:projects/windows-sql-cloud",
+                      + "is:projects/confidential-vm-images",
+                      + "is:projects/confidential-space-images",
+                      + "is:projects/backupdr-images",
+                      + "is:projects/deeplearning-platform-release",
+                      + "is:projects/serverless-vpc-access-images",
+                      + "is:projects/gke-node-images",
+                      + "is:projects/gke-windows-node-images",
+                      + "is:projects/ubuntu-os-gke-cloud",
+                      + "is:projects/rocky-linux-accelerator-cloud",
+                      + "is:projects/ubuntu-os-accelerator-images",
+                    ]
+                }
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["compute.vmExternalIpAccess"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/compute.vmExternalIpAccess"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + deny_all = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["container.managed.enablePrivateNodes"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/container.managed.enablePrivateNodes"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["custom.denyBridgePerimeters"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/custom.denyBridgePerimeters"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["essentialcontacts.allowedContactDomains"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/essentialcontacts.allowedContactDomains"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + condition {
+                  + expression = <<-EOT
+                        !resource.matchTag('254926364766/org-policies', 'allowed-essential-contacts-domains-all')
+                    EOT
+                  + title      = "Restrict essential contacts domains"
+                }
+              + values {
+                  + allowed_values = [
+                      + "@kathaitsun.com",
+                    ]
+                }
+            }
+          + rules {
+              + allow_all = "TRUE"
+
+              + condition {
+                  + expression = <<-EOT
+                        resource.matchTag('254926364766/org-policies', 'allowed-essential-contacts-domains-all')
+                    EOT
+                  + title      = "Allow essential contacts from any domain"
+                }
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["gcp.resourceLocations"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/gcp.resourceLocations"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + allow_all = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["iam.allowedPolicyMemberDomains"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/iam.allowedPolicyMemberDomains"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + condition {
+                  + expression = <<-EOT
+                        !resource.matchTag('254926364766/org-policies', 'allowed-policy-member-domains-all')
+                    EOT
+                  + title      = "Restrict member domains"
+                }
+              + values {
+                  + allowed_values = [
+                      + "is:C03b3mev4",
+                    ]
+                }
+            }
+          + rules {
+              + allow_all = "TRUE"
+
+              + condition {
+                  + expression = <<-EOT
+                        resource.matchTag('254926364766/org-policies', 'allowed-policy-member-domains-all')
+                    EOT
+                  + title      = "Allow any member domain"
+                }
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["iam.automaticIamGrantsForDefaultServiceAccounts"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/iam.automaticIamGrantsForDefaultServiceAccounts"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["iam.disableAuditLoggingExemption"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/iam.disableAuditLoggingExemption"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["iam.disableServiceAccountKeyCreation"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/iam.disableServiceAccountKeyCreation"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["iam.disableServiceAccountKeyUpload"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/iam.disableServiceAccountKeyUpload"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["iam.managed.disableServiceAccountApiKeyCreation"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/iam.managed.disableServiceAccountApiKeyCreation"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["iam.serviceAccountKeyExposureResponse"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/iam.serviceAccountKeyExposureResponse"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + values {
+                  + allowed_values = [
+                      + "is:DISABLE_KEY",
+                    ]
+                }
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["iam.workloadIdentityPoolAwsAccounts"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/iam.workloadIdentityPoolAwsAccounts"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + deny_all = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["iam.workloadIdentityPoolProviders"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/iam.workloadIdentityPoolProviders"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + deny_all = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["run.allowedIngress"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/run.allowedIngress"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + values {
+                  + allowed_values = [
+                      + "is:internal-and-cloud-load-balancing",
+                    ]
+                }
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["run.managed.requireInvokerIam"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/run.managed.requireInvokerIam"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["sql.restrictAuthorizedNetworks"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/sql.restrictAuthorizedNetworks"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["sql.restrictPublicIp"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/sql.restrictPublicIp"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["storage.publicAccessPrevention"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/storage.publicAccessPrevention"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["storage.restrictAuthTypes"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/storage.restrictAuthTypes"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + values {
+                  + denied_values = [
+                      + "in:ALL_HMAC_SIGNED_REQUESTS",
+                    ]
+                }
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["storage.secureHttpTransport"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/storage.secureHttpTransport"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_org_policy_policy.default["storage.uniformBucketLevelAccess"] will be created
+  + resource "google_org_policy_policy" "default" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + name   = "organizations/254926364766/policies/storage.uniformBucketLevelAccess"
+      + parent = "organizations/254926364766"
+
+      + spec {
+          + etag        = (known after apply)
+          + update_time = (known after apply)
+
+          + rules {
+              + enforce = "TRUE"
+            }
+        }
+    }
+
+  # module.organization-iam[0].google_organization_iam_audit_config.default["sts.googleapis.com"] will be created
+  + resource "google_organization_iam_audit_config" "default" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + org_id  = "254926364766"
+      + service = "sts.googleapis.com"
+
+      + audit_log_config {
+          + exempted_members = []
+          + log_type         = "ADMIN_READ"
+        }
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["$custom_roles:organization_admin_viewer"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-org-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "organizations/254926364766/roles/organizationAdminViewer"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["$custom_roles:tag_viewer"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-org-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "organizations/254926364766/roles/tagViewer"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/accesscontextmanager.policyAdmin"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/*",
+          + "serviceAccount:iac-org-cicd-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-vpcsc-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/accesscontextmanager.policyAdmin"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/accesscontextmanager.policyReader"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-vpcsc-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/accesscontextmanager.policyReader"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/billing.creator"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag   = (known after apply)
+      + id     = (known after apply)
+      + org_id = "254926364766"
+      + role   = "roles/billing.creator"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/cloudasset.owner"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "group:gcp-organization-admins@kathaitsun.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/cloudasset.owner"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/cloudasset.viewer"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/*",
+          + "serviceAccount:iac-org-cicd-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-security-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-security-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-vpcsc-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-vpcsc-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/cloudasset.viewer"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/cloudsupport.admin"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "group:gcp-organization-admins@kathaitsun.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/cloudsupport.admin"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/cloudsupport.techSupportEditor"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "group:gcp-organization-admins@kathaitsun.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/cloudsupport.techSupportEditor"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/compute.orgFirewallPolicyAdmin"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-networking-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/compute.orgFirewallPolicyAdmin"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/compute.orgFirewallPolicyUser"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-networking-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/compute.orgFirewallPolicyUser"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/compute.osAdminLogin"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "group:gcp-organization-admins@kathaitsun.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/compute.osAdminLogin"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/compute.osLoginExternalUser"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "group:gcp-organization-admins@kathaitsun.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/compute.osLoginExternalUser"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/compute.viewer"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-networking-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/compute.viewer"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/compute.xpnAdmin"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "group:gcp-organization-admins@kathaitsun.com",
+          + "serviceAccount:iac-networking-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/compute.xpnAdmin"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/essentialcontacts.admin"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/*",
+          + "serviceAccount:iac-org-cicd-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/essentialcontacts.admin"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/essentialcontacts.viewer"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-org-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/essentialcontacts.viewer"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/iam.organizationRoleAdmin"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/*",
+          + "serviceAccount:iac-org-cicd-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/iam.organizationRoleAdmin"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/iam.organizationRoleViewer"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-org-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/iam.organizationRoleViewer"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/iam.workforcePoolAdmin"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "group:gcp-organization-admins@kathaitsun.com",
+          + "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/*",
+          + "serviceAccount:iac-org-cicd-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/iam.workforcePoolAdmin"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/iam.workforcePoolViewer"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-org-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/iam.workforcePoolViewer"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/logging.admin"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/*",
+          + "serviceAccount:iac-org-cicd-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/logging.admin"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/logging.viewer"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-org-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/logging.viewer"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/orgpolicy.policyAdmin"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "group:gcp-organization-admins@kathaitsun.com",
+          + "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/*",
+          + "serviceAccount:iac-org-cicd-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/orgpolicy.policyAdmin"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/orgpolicy.policyViewer"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-org-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/orgpolicy.policyViewer"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/owner"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "group:gcp-organization-admins@kathaitsun.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/owner"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/resourcemanager.folderAdmin"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "group:gcp-organization-admins@kathaitsun.com",
+          + "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/*",
+          + "serviceAccount:iac-org-cicd-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/resourcemanager.folderAdmin"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/resourcemanager.folderViewer"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-org-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/resourcemanager.folderViewer"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/resourcemanager.organizationAdmin"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "group:gcp-organization-admins@kathaitsun.com",
+          + "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/*",
+          + "serviceAccount:iac-org-cicd-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/resourcemanager.organizationAdmin"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/resourcemanager.projectCreator"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "group:gcp-organization-admins@kathaitsun.com",
+          + "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/*",
+          + "serviceAccount:iac-org-cicd-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/resourcemanager.projectCreator"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/resourcemanager.projectMover"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/*",
+          + "serviceAccount:iac-org-cicd-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/resourcemanager.projectMover"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/resourcemanager.tagAdmin"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "group:gcp-organization-admins@kathaitsun.com",
+          + "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/*",
+          + "serviceAccount:iac-org-cicd-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/resourcemanager.tagAdmin"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/resourcemanager.tagUser"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/*",
+          + "serviceAccount:iac-org-cicd-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/resourcemanager.tagUser"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/resourcemanager.tagViewer"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-org-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/resourcemanager.tagViewer"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.authoritative["roles/serviceusage.serviceUsageViewer"] will be created
+  + resource "google_organization_iam_binding" "authoritative" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-org-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/serviceusage.serviceUsageViewer"
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.bindings["pf_org_policy_admin"] will be created
+  + resource "google_organization_iam_binding" "bindings" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-pf-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/orgpolicy.policyAdmin"
+
+      + condition {
+          + expression = "resource.matchTag('254926364766/context', 'project-factory')"
+          + title      = "Project factory org policy admin"
+        }
+    }
+
+  # module.organization-iam[0].google_organization_iam_binding.bindings["pf_org_policy_viewer"] will be created
+  + resource "google_organization_iam_binding" "bindings" {
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-pf-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + org_id  = "254926364766"
+      + role    = "roles/orgpolicy.policyViewer"
+
+      + condition {
+          + expression = "resource.matchTag('254926364766/context', 'project-factory')"
+          + title      = "Project factory org policy viewer"
+        }
+    }
+
+  # module.organization-iam[0].google_tags_tag_value_iam_binding.default["environment/development:roles/resourcemanager.tagUser"] will be created
+  + resource "google_tags_tag_value_iam_binding" "default" {
+      + etag      = (known after apply)
+      + id        = (known after apply)
+      + members   = [
+          + "serviceAccount:iac-networking-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-pf-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-security-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role      = "roles/resourcemanager.tagUser"
+      + tag_value = "tagValues/281481379621075"
+    }
+
+  # module.organization-iam[0].google_tags_tag_value_iam_binding.default["environment/development:roles/resourcemanager.tagViewer"] will be created
+  + resource "google_tags_tag_value_iam_binding" "default" {
+      + etag      = (known after apply)
+      + id        = (known after apply)
+      + members   = [
+          + "serviceAccount:iac-networking-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-pf-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-security-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role      = "roles/resourcemanager.tagViewer"
+      + tag_value = "tagValues/281481379621075"
+    }
+
+  # module.organization-iam[0].google_tags_tag_value_iam_binding.default["environment/production:roles/resourcemanager.tagUser"] will be created
+  + resource "google_tags_tag_value_iam_binding" "default" {
+      + etag      = (known after apply)
+      + id        = (known after apply)
+      + members   = [
+          + "serviceAccount:iac-networking-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-pf-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-security-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role      = "roles/resourcemanager.tagUser"
+      + tag_value = "tagValues/281477705455734"
+    }
+
+  # module.organization-iam[0].google_tags_tag_value_iam_binding.default["environment/production:roles/resourcemanager.tagViewer"] will be created
+  + resource "google_tags_tag_value_iam_binding" "default" {
+      + etag      = (known after apply)
+      + id        = (known after apply)
+      + members   = [
+          + "serviceAccount:iac-networking-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-pf-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-security-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role      = "roles/resourcemanager.tagViewer"
+      + tag_value = "tagValues/281477705455734"
+    }
+
+  # module.factory.module.buckets["iac-0/iac-org-state"].google_storage_bucket_iam_binding.authoritative["$custom_roles:storage_viewer"] will be created
+  + resource "google_storage_bucket_iam_binding" "authoritative" {
+      + bucket  = "sun21-prod-iac-core-0-iac-org-state"
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-org-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role    = "organizations/254926364766/roles/storageViewer"
+    }
+
+  # module.factory.module.buckets["iac-0/iac-org-state"].google_storage_bucket_iam_binding.authoritative["roles/storage.admin"] will be created
+  + resource "google_storage_bucket_iam_binding" "authoritative" {
+      + bucket  = "sun21-prod-iac-core-0-iac-org-state"
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role    = "roles/storage.admin"
+    }
+
+  # module.factory.module.buckets["iac-0/iac-outputs"].google_storage_bucket.bucket[0] must be replaced
+-/+ resource "google_storage_bucket" "bucket" {
+      - default_event_based_hold    = false -> null
+      - enable_object_retention     = false -> null
+      ~ id                          = "sun21-prod-iac-core-0-iac-outputs" -> (known after apply)
+      - labels                      = {} -> null
+        name                        = "sun21-prod-iac-core-0-iac-outputs"
+      + project                     = "sun21-prod-iac-core-0" # forces replacement
+      ~ project_number              = 705034650203 -> (known after apply)
+      ~ public_access_prevention    = "inherited" -> (known after apply)
+      - requester_pays              = false -> null
+      + rpo                         = (known after apply)
+      ~ self_link                   = "https://www.googleapis.com/storage/v1/b/sun21-prod-iac-core-0-iac-outputs" -> (known after apply)
+      ~ terraform_labels            = {
+          + "goog-terraform-provisioned" = "true"
+        }
+      ~ time_created                = "2026-03-22T11:41:50.053Z" -> (known after apply)
+      ~ updated                     = "2026-03-27T11:47:16.647Z" -> (known after apply)
+      ~ url                         = "gs://sun21-prod-iac-core-0-iac-outputs" -> (known after apply)
+        # (5 unchanged attributes hidden)
+
+      - hierarchical_namespace {
+          - enabled = false -> null
+        }
+
+      ~ soft_delete_policy (known after apply)
+      - soft_delete_policy {
+          - effective_time             = "2026-03-22T11:41:50.053Z" -> null
+          - retention_duration_seconds = 604800 -> null
+        }
+
+      ~ website (known after apply)
+
+        # (1 unchanged block hidden)
+    }
+
+  # module.factory.module.buckets["iac-0/iac-outputs"].google_storage_bucket_iam_binding.authoritative["$custom_roles:storage_viewer"] will be created
+  + resource "google_storage_bucket_iam_binding" "authoritative" {
+      + bucket  = "sun21-prod-iac-core-0-iac-outputs"
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-dp-dev-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-networking-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-cicd-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-cicd-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-pf-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-security-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-vpcsc-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role    = "organizations/254926364766/roles/storageViewer"
+    }
+
+  # module.factory.module.buckets["iac-0/iac-outputs"].google_storage_bucket_iam_binding.authoritative["roles/storage.admin"] will be created
+  + resource "google_storage_bucket_iam_binding" "authoritative" {
+      + bucket  = "sun21-prod-iac-core-0-iac-outputs"
+      + etag    = (known after apply)
+      + id      = (known after apply)
+      + members = [
+          + "serviceAccount:iac-dp-dev-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-networking-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-org-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-pf-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-security-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+          + "serviceAccount:iac-vpcsc-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role    = "roles/storage.admin"
+    }
+
+  # module.factory.module.buckets["iac-0/iac-stage-state"].google_storage_managed_folder.folder["1-vpcsc/"] will be created
+  + resource "google_storage_managed_folder" "folder" {
+      + bucket         = "sun21-prod-iac-core-0-iac-stage-state"
+      + create_time    = (known after apply)
+      + force_destroy  = false
+      + id             = (known after apply)
+      + metageneration = (known after apply)
+      + name           = "1-vpcsc/"
+      + self_link      = (known after apply)
+      + update_time    = (known after apply)
+    }
+
+  # module.factory.module.buckets["iac-0/iac-stage-state"].google_storage_managed_folder.folder["2-networking/"] will be created
+  + resource "google_storage_managed_folder" "folder" {
+      + bucket         = "sun21-prod-iac-core-0-iac-stage-state"
+      + create_time    = (known after apply)
+      + force_destroy  = false
+      + id             = (known after apply)
+      + metageneration = (known after apply)
+      + name           = "2-networking/"
+      + self_link      = (known after apply)
+      + update_time    = (known after apply)
+    }
+
+  # module.factory.module.buckets["iac-0/iac-stage-state"].google_storage_managed_folder.folder["2-project-factory/"] will be created
+  + resource "google_storage_managed_folder" "folder" {
+      + bucket         = "sun21-prod-iac-core-0-iac-stage-state"
+      + create_time    = (known after apply)
+      + force_destroy  = false
+      + id             = (known after apply)
+      + metageneration = (known after apply)
+      + name           = "2-project-factory/"
+      + self_link      = (known after apply)
+      + update_time    = (known after apply)
+    }
+
+  # module.factory.module.buckets["iac-0/iac-stage-state"].google_storage_managed_folder.folder["2-security/"] will be created
+  + resource "google_storage_managed_folder" "folder" {
+      + bucket         = "sun21-prod-iac-core-0-iac-stage-state"
+      + create_time    = (known after apply)
+      + force_destroy  = false
+      + id             = (known after apply)
+      + metageneration = (known after apply)
+      + name           = "2-security/"
+      + self_link      = (known after apply)
+      + update_time    = (known after apply)
+    }
+
+  # module.factory.module.buckets["iac-0/iac-stage-state"].google_storage_managed_folder.folder["3-data-platform-dev/"] will be created
+  + resource "google_storage_managed_folder" "folder" {
+      + bucket         = "sun21-prod-iac-core-0-iac-stage-state"
+      + create_time    = (known after apply)
+      + force_destroy  = false
+      + id             = (known after apply)
+      + metageneration = (known after apply)
+      + name           = "3-data-platform-dev/"
+      + self_link      = (known after apply)
+      + update_time    = (known after apply)
+    }
+
+  # module.factory.module.buckets["iac-0/iac-stage-state"].google_storage_managed_folder_iam_binding.authoritative["1-vpcsc/$custom_roles:storage_viewer"] will be created
+  + resource "google_storage_managed_folder_iam_binding" "authoritative" {
+      + bucket         = "sun21-prod-iac-core-0-iac-stage-state"
+      + etag           = (known after apply)
+      + id             = (known after apply)
+      + managed_folder = "1-vpcsc/"
+      + members        = [
+          + "serviceAccount:iac-vpcsc-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role           = "organizations/254926364766/roles/storageViewer"
+    }
+
+  # module.factory.module.buckets["iac-0/iac-stage-state"].google_storage_managed_folder_iam_binding.authoritative["1-vpcsc/roles/storage.admin"] will be created
+  + resource "google_storage_managed_folder_iam_binding" "authoritative" {
+      + bucket         = "sun21-prod-iac-core-0-iac-stage-state"
+      + etag           = (known after apply)
+      + id             = (known after apply)
+      + managed_folder = "1-vpcsc/"
+      + members        = [
+          + "serviceAccount:iac-vpcsc-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role           = "roles/storage.admin"
+    }
+
+  # module.factory.module.buckets["iac-0/iac-stage-state"].google_storage_managed_folder_iam_binding.authoritative["2-networking/$custom_roles:storage_viewer"] will be created
+  + resource "google_storage_managed_folder_iam_binding" "authoritative" {
+      + bucket         = "sun21-prod-iac-core-0-iac-stage-state"
+      + etag           = (known after apply)
+      + id             = (known after apply)
+      + managed_folder = "2-networking/"
+      + members        = [
+          + "serviceAccount:iac-networking-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role           = "organizations/254926364766/roles/storageViewer"
+    }
+
+  # module.factory.module.buckets["iac-0/iac-stage-state"].google_storage_managed_folder_iam_binding.authoritative["2-networking/roles/storage.admin"] will be created
+  + resource "google_storage_managed_folder_iam_binding" "authoritative" {
+      + bucket         = "sun21-prod-iac-core-0-iac-stage-state"
+      + etag           = (known after apply)
+      + id             = (known after apply)
+      + managed_folder = "2-networking/"
+      + members        = [
+          + "serviceAccount:iac-networking-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role           = "roles/storage.admin"
+    }
+
+  # module.factory.module.buckets["iac-0/iac-stage-state"].google_storage_managed_folder_iam_binding.authoritative["2-project-factory/$custom_roles:storage_viewer"] will be created
+  + resource "google_storage_managed_folder_iam_binding" "authoritative" {
+      + bucket         = "sun21-prod-iac-core-0-iac-stage-state"
+      + etag           = (known after apply)
+      + id             = (known after apply)
+      + managed_folder = "2-project-factory/"
+      + members        = [
+          + "serviceAccount:iac-pf-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role           = "organizations/254926364766/roles/storageViewer"
+    }
+
+  # module.factory.module.buckets["iac-0/iac-stage-state"].google_storage_managed_folder_iam_binding.authoritative["2-project-factory/roles/storage.admin"] will be created
+  + resource "google_storage_managed_folder_iam_binding" "authoritative" {
+      + bucket         = "sun21-prod-iac-core-0-iac-stage-state"
+      + etag           = (known after apply)
+      + id             = (known after apply)
+      + managed_folder = "2-project-factory/"
+      + members        = [
+          + "serviceAccount:iac-pf-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role           = "roles/storage.admin"
+    }
+
+  # module.factory.module.buckets["iac-0/iac-stage-state"].google_storage_managed_folder_iam_binding.authoritative["2-security/$custom_roles:storage_viewer"] will be created
+  + resource "google_storage_managed_folder_iam_binding" "authoritative" {
+      + bucket         = "sun21-prod-iac-core-0-iac-stage-state"
+      + etag           = (known after apply)
+      + id             = (known after apply)
+      + managed_folder = "2-security/"
+      + members        = [
+          + "serviceAccount:iac-security-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role           = "organizations/254926364766/roles/storageViewer"
+    }
+
+  # module.factory.module.buckets["iac-0/iac-stage-state"].google_storage_managed_folder_iam_binding.authoritative["2-security/roles/storage.admin"] will be created
+  + resource "google_storage_managed_folder_iam_binding" "authoritative" {
+      + bucket         = "sun21-prod-iac-core-0-iac-stage-state"
+      + etag           = (known after apply)
+      + id             = (known after apply)
+      + managed_folder = "2-security/"
+      + members        = [
+          + "serviceAccount:iac-security-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role           = "roles/storage.admin"
+    }
+
+  # module.factory.module.buckets["iac-0/iac-stage-state"].google_storage_managed_folder_iam_binding.authoritative["3-data-platform-dev/$custom_roles:storage_viewer"] will be created
+  + resource "google_storage_managed_folder_iam_binding" "authoritative" {
+      + bucket         = "sun21-prod-iac-core-0-iac-stage-state"
+      + etag           = (known after apply)
+      + id             = (known after apply)
+      + managed_folder = "3-data-platform-dev/"
+      + members        = [
+          + "serviceAccount:iac-dp-dev-ro@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role           = "organizations/254926364766/roles/storageViewer"
+    }
+
+  # module.factory.module.buckets["iac-0/iac-stage-state"].google_storage_managed_folder_iam_binding.authoritative["3-data-platform-dev/roles/storage.admin"] will be created
+  + resource "google_storage_managed_folder_iam_binding" "authoritative" {
+      + bucket         = "sun21-prod-iac-core-0-iac-stage-state"
+      + etag           = (known after apply)
+      + id             = (known after apply)
+      + managed_folder = "3-data-platform-dev/"
+      + members        = [
+          + "serviceAccount:iac-dp-dev-rw@sun21-prod-iac-core-0.iam.gserviceaccount.com",
+        ]
+      + role           = "roles/storage.admin"
+    }
+
+Plan: 135 to add, 0 to change, 1 to destroy.

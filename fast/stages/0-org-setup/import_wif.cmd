@@ -1,0 +1,2 @@
+terraform import "module.factory.module.projects[\"iac-0\"].google_iam_workload_identity_pool.default[\"tfc-pool\"]" projects/sun21-prod-iac-core-0/locations/global/workloadIdentityPools/tfc-pool
+terraform import "module.factory.module.projects[\"iac-0\"].google_iam_workload_identity_pool_provider.default[\"tfc-pool/tfc-provider\"]" projects/sun21-prod-iac-core-0/locations/global/workloadIdentityPools/tfc-pool/providers/tfc-provider
