@@ -15,6 +15,12 @@
  */
 
 locals {
+  tfc_workspaces = {
+    "0-org-setup"  = "fabric-google"
+    "1-vpcsc"      = "fabric-google-vpcsc"
+    "2-networking" = "fabric-google-net"
+    "2-security"   = "fabric-google-sec"
+  }
   of_buckets = {
     for k, v in module.factory.storage_buckets :
     "$storage_buckets:${k}" => v
@@ -59,6 +65,7 @@ locals {
   )
   of_providers_content = {
     for k, v in local.output_files.providers : k => templatestring(local.of_template, {
+      workspace_name = lookup(local.tfc_workspaces, k, "fabric-google-${k}")
       bucket = lookup(
         local.of_buckets, v.bucket, v.bucket
       )
@@ -97,7 +104,7 @@ locals {
       iam_principals = local.of_ctx.iam_principals
       logging = {
         writer_identities = module.organization-iam[0].sink_writer_identities
-        project_number    = module.factory.project_numbers["log-0"]
+        project_number    = try(module.factory.project_numbers["log-0"], null)
       }
       project_ids     = local.of_ctx.project_ids,
       project_numbers = module.factory.project_numbers

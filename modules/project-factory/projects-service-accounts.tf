@@ -39,9 +39,10 @@ locals {
           try(opts.iam_self_roles, []),
           try(local.data_defaults.defaults.service_accounts.iam_self_roles, []),
         ))
-        iam_storage_roles = try(opts.iam_storage_roles, {})
-        tag_bindings      = try(opts.tag_bindings, {})
-        opts              = opts
+        iam_storage_roles      = try(opts.iam_storage_roles, {})
+        iam_by_principals      = try(opts.iam_by_principals, {})
+        tag_bindings           = try(opts.tag_bindings, {})
+        opts                   = opts
       }
     ]
   ])
@@ -102,7 +103,7 @@ module "service_accounts-iam" {
   for_each = {
     for k in local.projects_service_accounts :
     "${k.project_key}/${k.name}" => k
-    if k.iam_sa_roles != {} || k.iam != {}
+    if k.iam_sa_roles != {} || k.iam != {} || k.iam_by_principals != {}
   }
   project_id = (
     module.service-accounts[each.key].service_account.project
@@ -127,5 +128,6 @@ module "service_accounts-iam" {
   iam                   = each.value.iam
   iam_bindings          = each.value.iam_bindings
   iam_bindings_additive = each.value.iam_bindings_additive
+  iam_by_principals     = lookup(each.value, "iam_by_principals", {})
   iam_sa_roles          = each.value.iam_sa_roles
 }

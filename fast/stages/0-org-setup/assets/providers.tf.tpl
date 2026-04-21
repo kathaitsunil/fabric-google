@@ -15,17 +15,11 @@
  */
 
 terraform {
-  backend "gcs" {
-    bucket                      = "${bucket}"
-    %{~ if try(universe_domain, null) == null ~}
-    impersonate_service_account = "${service_account}"
-    %{~ endif ~}
-    %{~ if try(prefix, null) != null ~}
-    prefix = "${prefix}"
-    %{~ endif ~}
-    %{~ if try(universe_domain, null) != null ~}
-    storage_custom_endpoint = "https://storage.${universe_domain}/storage/v1/b"
-    %{~ endif ~}
+  cloud {
+    organization = "terraform-cloud-deployment-GCP"
+    workspaces {
+      name = "${workspace_name}"
+    }
   }
 }
 provider "google" {

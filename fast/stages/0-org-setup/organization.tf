@@ -77,7 +77,7 @@ locals {
 }
 
 module "organization" {
-  source           = "../../../modules/organization"
+  source           = "github.com/kathaitsunil/fabric-google//modules/organization?ref=master"
   count            = local.organization_id != null ? 1 : 0
   organization_id  = "organizations/${local.organization_id}"
   logging_settings = lookup(local.organization, "logging", null)
@@ -105,7 +105,7 @@ module "organization" {
 }
 
 module "organization-iam" {
-  source          = "../../../modules/organization"
+  source          = "github.com/kathaitsunil/fabric-google//modules/organization?ref=master"
   count           = local.organization.id != null ? 1 : 0
   organization_id = module.organization[0].id
   asset_feeds     = lookup(local.organization, "asset_feeds", {})
@@ -140,8 +140,8 @@ module "organization-iam" {
     )
   })
   factories_config = {
-    org_policy_custom_constraints = "${local.paths.organization}/custom-constraints"
-    org_policies                  = "${local.paths.organization}/org-policies"
+    # org_policy_custom_constraints = "${local.paths.organization}/custom-constraints"
+    # org_policies                  = "${local.paths.organization}/org-policies"
     tags                          = "${local.paths.organization}/tags"
   }
   iam = lookup(
@@ -169,3 +169,4 @@ module "organization-iam" {
     force_context_ids = true
   }
 }
+

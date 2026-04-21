@@ -24,32 +24,32 @@ locals {
       for agent in lookup(local.service_agents_by_api, api, []) :
       (agent.name) => merge(agent, {
         email = (
-          api == "cloudservices"
-          ? (
-            var.universe == null
-            ? format(
-              "%s@cloudservices.gserviceaccount.com",
-              local.project.number
-            )
-            : format(
-              "%s@cloudservices.%siam.gserviceaccount.com",
-              local.project.number,
-              local._u_domain
-            )
-          )
-          : (
-            var.universe == null || !startswith(api, "cloudkms.")
-            ? templatestring(agent.identity, {
-              project_number  = local.project.number
-              universe_domain = local._u_domain
-            })
-            # universe uses partner KMS
-            : format(
-              "service-%s@gcp-sa-ekms.%siam.gserviceaccount.com",
-              local.project.number,
-              local._u_domain
-            )
-          )
+              agent.api == "cloudservices"
+              ? (
+                var.universe == null
+                ? format(
+                  "%s@cloudservices.gserviceaccount.com",
+                  coalesce(local.project.number, "0")
+                )
+                : format(
+                  "%s@cloudservices.%siam.gserviceaccount.com",
+                  coalesce(local.project.number, "0"),
+                  local._u_domain
+                )
+              )
+              : (
+                var.universe == null || !startswith(agent.api, "cloudkms.")
+                ? templatestring(agent.identity, {
+                  project_number  = coalesce(local.project.number, "0")
+                  universe_domain = local._u_domain
+                })
+                # universe uses partner KMS
+                : format(
+                  "service-%s@gcp-sa-ekms.%siam.gserviceaccount.com",
+                  coalesce(local.project.number, "0"),
+                  local._u_domain
+                )
+              )
         )
       })
     }

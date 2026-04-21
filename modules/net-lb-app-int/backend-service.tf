@@ -1,5 +1,5 @@
 /**
- * Copyright 2022 Google LLC
+ * Copyright 2026 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -47,10 +47,10 @@ resource "google_compute_region_backend_service" "default" {
   for_each = var.backend_service_configs
   project = (
     each.value.project_id == null
-    ? var.project_id
+    ? local.project_id
     : each.value.project_id
   )
-  region                          = var.region
+  region                          = local.region
   name                            = coalesce(each.value.name, "${var.name}-${each.key}")
   description                     = each.value.description
   affinity_cookie_ttl_sec         = each.value.affinity_cookie_ttl_sec
@@ -218,6 +218,22 @@ resource "google_compute_region_backend_service" "default" {
     for_each = each.value.enable_subsetting == true ? [""] : []
     content {
       policy = "CONSISTENT_HASH_SUBSETTING"
+    }
+  }
+
+  dynamic "tls_settings" {
+    for_each = each.value.tls_settings == null ? [] : [each.value.tls_settings]
+    content {
+      # authentication_config is not supported by the beta provider in this resource?
+      # Wait, lint will tell me. Search result said yes.
+      authentication_config = tls_settings.value.authentication_config
+      sni                   = tls_settings.value.sni
+      dynamic "subject_alt_names" {
+        for_each = tls_settings.value.subject_alt_names == null ? [] : tls_settings.value.subject_alt_names
+        content {
+          dns_name = subject_alt_names.value
+        }
+      }
     }
   }
 }

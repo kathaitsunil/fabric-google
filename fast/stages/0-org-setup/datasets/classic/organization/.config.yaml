@@ -17,9 +17,6 @@
 # yaml-language-server: $schema=../../../schemas/organization.schema.json
 
 id: $defaults:organization/id
-contacts:
-  $email_addresses:gcp-organization-admins:
-    - ALL
 # conditional authoritative IAM bindings
 iam_bindings:
   # these don't conflict with IAM / IAM by principal
@@ -53,7 +50,7 @@ iam_by_principals:
     - roles/resourcemanager.projectCreator
     - roles/resourcemanager.tagAdmin
     - roles/iam.workforcePoolAdmin
-  $iam_principals:service_accounts/iac-0/iac-org-rw:
+  $iam_principals:service_accounts/iac-0/iac-org-rw: &iac_org_rw_roles
     - roles/accesscontextmanager.policyAdmin
     - roles/cloudasset.viewer
     - roles/essentialcontacts.admin
@@ -67,6 +64,8 @@ iam_by_principals:
     - roles/resourcemanager.projectMover
     - roles/resourcemanager.tagAdmin
     - roles/resourcemanager.tagUser
+  $iam_principals:service_accounts/iac-0/iac-org-cicd-rw: *iac_org_rw_roles
+  "principalSet://iam.googleapis.com/projects/705034650203/locations/global/workloadIdentityPools/tfc-pool/*": *iac_org_rw_roles
   $iam_principals:service_accounts/iac-0/iac-org-ro:
     - roles/cloudasset.viewer
     - roles/essentialcontacts.viewer
@@ -115,29 +114,6 @@ iam_by_principals:
 data_access_logs:
   sts.googleapis.com:
     ADMIN_READ: {}
-logging:
-  # disable_default_log_sink: false
-  storage_location: $locations:primary
-  sinks:
-    audit-logs:
-      # description: foo
-      # exclusions: {}
-      destination: $log_buckets:log-0/audit-logs
-      filter: |
-        log_id("cloudaudit.googleapis.com/activity") OR
-        log_id("cloudaudit.googleapis.com/system_event") OR
-        log_id("cloudaudit.googleapis.com/policy") OR
-        log_id("cloudaudit.googleapis.com/access_transparency")
-    iam:
-      destination: $log_buckets:log-0/iam
-      filter: |
-        protoPayload.serviceName="iamcredentials.googleapis.com" OR
-        protoPayload.serviceName="iam.googleapis.com" OR
-        protoPayload.serviceName="sts.googleapis.com"
-    vpc-sc:
-      destination: $log_buckets:log-0/vpc-sc
-      filter: |
-        protoPayload.metadata.@type="type.googleapis.com/google.cloud.audit.VpcServiceControlAuditMetadata"
 # authoritative IAM bindings by role
 # these are internally merged with IAM by principal
 iam:

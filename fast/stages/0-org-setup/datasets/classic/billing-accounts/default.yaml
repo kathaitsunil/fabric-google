@@ -14,12 +14,18 @@
 
 # yaml-language-server: $schema=../../../schemas/billing-account.schema.json
 
+# I commented this line
+
 id: $defaults:billing_account
+
 # authoritative IAM must be used with care here, as it resets permissions
 # three modes of managing billing IAM
 # - at the org level (don't set anything here, set roles in the org)
 # - at the billing account level (set the roles below)
 # - no admin access to billing account (don't set roles here or in org)
+
+# I commented belo all lines
+
 iam_bindings_additive:
   billing_admin_org_admins:
     role: roles/billing.admin
@@ -39,7 +45,7 @@ iam_bindings_additive:
   billing_user_pf_sa:
     role: roles/billing.user
     member: $iam_principals:service_accounts/iac-0/iac-pf-rw
-# logging_sinks:
+# #logging_sinks:
 #   test:
 #     description: Test sink
 #     destination: $project_ids:log-0
